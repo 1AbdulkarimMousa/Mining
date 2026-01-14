@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Ziyo International's mining portfolio - 5 copper mining sites covering 3,000+ acres in North Waziristan, Pakistan.">
+  <title>Mining Projects - Ziyo International</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/micro-interactions.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-ziyo">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-ziyo" href="index.html">
+        <span class="brand-icon">Z</span><span>ZIYO</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-ziyo d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="index.html" data-i18n="navigation.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="about.html" data-i18n="navigation.about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo active" href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="team.html" data-i18n="navigation.team">Team</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="lang-toggle" data-lang-toggle><i class="fa-solid fa-globe"></i><span class="lang-text">中文</span></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-page">
+    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #1a1a2e 100%);"></div>
+    <div class="hero-content">
+      <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="projects.hero.badge">Portfolio</span>
+      <h1 class="hero-title fade-up stagger-1" data-i18n="projects.hero.title">Mining Projects</h1>
+      <p class="hero-subtitle fade-up stagger-2" data-i18n="projects.hero.subtitle">
+        Five strategically located copper mining sites spanning over 3,000 acres in North Waziristan, Pakistan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title" data-i18n="projects.overview.title">Portfolio Overview</h2>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-3 fade-up stagger-1">
+          <div class="metric-card">
+            <div class="metric-card-value">3,078.63</div>
+            <div class="metric-card-label" data-i18n="projects.overview.total_area">Total Acres</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up stagger-2">
+          <div class="metric-card">
+            <div class="metric-card-value">5</div>
+            <div class="metric-card-label" data-i18n="projects.overview.mines">Mine Sites</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up stagger-3">
+          <div class="metric-card">
+            <div class="metric-card-value">3</div>
+            <div class="metric-card-label" data-i18n="projects.overview.licenses">Prospecting Licenses</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up stagger-4">
+          <div class="metric-card">
+            <div class="metric-card-value">2</div>
+            <div class="metric-card-label" data-i18n="projects.overview.agreements">Village Agreements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mine Cards -->
+  <section class="section section-dark" id="mines">
+    <div class="container">
+      <!-- Mine 1 -->
+      <div class="mine-detail-card mb-5 fade-up">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <div class="mine-visual" style="background: linear-gradient(135deg, #B87333 0%, #8B4513 100%); aspect-ratio: 4/3; border-radius: var(--radius-lg); overflow: hidden;">
+              <img src="assets/images/mines/site1/site1-1.jpg" alt="Mine 1 - Degan, Darwazgai" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-mountain\' style=\'font-size: 5rem; color: rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; height: 100%;\'></i>';">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <span class="badge bg-success mb-2">Active Production</span>
+            <h3 class="mb-2" data-i18n="projects.mines.mine1.name">Mine 1 - Degan, Darwazgai</h3>
+            <p class="text-secondary mb-4" data-i18n="projects.mines.mine1.description">
+              Our flagship mining site with proven high-grade copper deposits. Active production with semi-mechanized operations and experienced local workforce.
+            </p>
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-value">1,096.35 acres</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Grade</span><span class="spec-value">0.5-10% Cu</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Output</span><span class="spec-value">10-30 t/day</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">History</span><span class="spec-value">1,500 tons</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mine 4 -->
+      <div class="mine-detail-card mb-5 fade-up stagger-1">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5 order-lg-2">
+            <div class="mine-visual" style="background: linear-gradient(135deg, #CD853F 0%, #B87333 100%); aspect-ratio: 4/3; border-radius: var(--radius-lg); overflow: hidden;">
+              <img src="assets/images/mines/site4/panorama.jpg" alt="Mine 4 - Most Productive Site" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-gem\' style=\'font-size: 5rem; color: rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; height: 100%;\'></i>';">
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-1">
+            <span class="badge bg-warning text-dark mb-2">Most Productive</span>
+            <h3 class="mb-2" data-i18n="projects.mines.mine4.name">Mine 4 - North Waziristan</h3>
+            <p class="text-secondary mb-4" data-i18n="projects.mines.mine4.description">
+              Our most productive site with highest daily output. Village agreement ensures strong community support.
+            </p>
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-value">600 acres</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Grade</span><span class="spec-value">0.5-8% Cu</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">Output</span><span class="spec-value">30-50 t/day</span></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="spec-item"><span class="spec-label">History</span><span class="spec-value">3,000 tons</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Mines Grid -->
+      <div class="row g-4">
+        <!-- Mine 2 -->
+        <div class="col-md-4 fade-up stagger-2">
+          <div class="card-ziyo p-4 h-100">
+            <span class="badge bg-success mb-2">Active</span>
+            <h4 class="mb-2">Mine 2 - Boyya Kalay</h4>
+            <p class="text-secondary small mb-3">Strategic location with excellent ore grades and expansion potential.</p>
+            <ul class="list-unstyled small text-secondary">
+              <li><i class="fa-solid fa-map text-copper me-2"></i>400.16 acres</li>
+              <li><i class="fa-solid fa-gem text-copper me-2"></i>0.5-10% Cu</li>
+              <li><i class="fa-solid fa-truck text-copper me-2"></i>10-30 t/day</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mine 3 -->
+        <div class="col-md-4 fade-up stagger-3">
+          <div class="card-ziyo p-4 h-100">
+            <span class="badge bg-secondary mb-2">Early Stage</span>
+            <h4 class="mb-2">Mine 3</h4>
+            <p class="text-secondary small mb-3">Early-stage development with confirmed copper presence.</p>
+            <ul class="list-unstyled small text-secondary">
+              <li><i class="fa-solid fa-map text-copper me-2"></i>497.12 acres</li>
+              <li><i class="fa-solid fa-gem text-copper me-2"></i>0.5-10% Cu</li>
+              <li><i class="fa-solid fa-clock text-copper me-2"></i>Development phase</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mine 5 -->
+        <div class="col-md-4 fade-up stagger-4">
+          <div class="card-ziyo p-4 h-100">
+            <span class="badge bg-info mb-2">High Grade</span>
+            <h4 class="mb-2">Mine 5</h4>
+            <p class="text-secondary small mb-3">High-grade copper oxide deposits confirmed through surface sampling.</p>
+            <ul class="list-unstyled small text-secondary">
+              <li><i class="fa-solid fa-map text-copper me-2"></i>485 acres</li>
+              <li><i class="fa-solid fa-gem text-copper me-2"></i>6-8% Cu</li>
+              <li><i class="fa-solid fa-flask text-copper me-2"></i>Surface confirmed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section class="section" id="specs">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 fade-up">
+          <h2 class="section-title" data-i18n="projects.specs.title">Technical Specifications</h2>
+          <div class="table-responsive">
+            <table class="table table-dark table-striped">
+              <tbody>
+                <tr>
+                  <td data-i18n="projects.specs.ore_type">Ore Type</td>
+                  <td data-i18n="projects.specs.ore_type_value">Copper-bearing sulfide and oxide ores</td>
+                </tr>
+                <tr>
+                  <td data-i18n="projects.specs.grade_range">Grade Range</td>
+                  <td data-i18n="projects.specs.grade_range_value">0.5% - 10% Cu</td>
+                </tr>
+                <tr>
+                  <td data-i18n="projects.specs.associated">Associated Minerals</td>
+                  <td data-i18n="projects.specs.associated_value">Zinc, Silver, Gold, Cobalt, Nickel</td>
+                </tr>
+                <tr>
+                  <td data-i18n="projects.specs.depth">Deposit Depth</td>
+                  <td data-i18n="projects.specs.depth_value">Surface to shallow deposits</td>
+                </tr>
+                <tr>
+                  <td data-i18n="projects.specs.method">Mining Method</td>
+                  <td data-i18n="projects.specs.method_value">Open pit, manual/semi-mechanized</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-up stagger-1">
+          <div class="card-ziyo p-4">
+            <h4 class="mb-3" data-i18n="projects.sgs.title">SGS Quality Certification</h4>
+            <p class="text-secondary small mb-3" data-i18n="projects.sgs.subtitle">Independent testing confirms exceptional ore quality</p>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="metric-card">
+                  <div class="metric-card-value" style="font-size: 1.5rem;">4.71-8.91%</div>
+                  <div class="metric-card-label">High-grade Cu</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="metric-card">
+                  <div class="metric-card-value" style="font-size: 1.5rem;">15-20%</div>
+                  <div class="metric-card-label">Concentrate Target</div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled small text-secondary mt-3 mb-0">
+              <li><i class="fa-solid fa-check text-copper me-2"></i>Fe: 12.32% - Iron content</li>
+              <li><i class="fa-solid fa-check text-copper me-2"></i>S: 17.51% - Sulfur (sulfide ore)</li>
+              <li><i class="fa-solid fa-check text-copper me-2"></i>Gold & silver traces confirmed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center fade-up">
+          <h2 class="section-title mb-3">Interested in Our Projects?</h2>
+          <p class="section-subtitle mx-auto mb-4">Learn about investment opportunities and partnership models.</p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="investment.html" class="btn-ziyo btn-copper btn-lg"><span>Investment Options</span><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="contact.html" class="btn-ziyo btn-outline-copper btn-lg"><span>Contact Us</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-brand-name">
+              <span class="brand-icon">Z</span>
+              <span>ZIYO INTERNATIONAL</span>
+            </div>
+            <p class="footer-desc" data-i18n="footer.description">
+              Strategic copper mining operations in Pakistan, connecting local mineral resources with global markets.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/dr-syed-waqi-ur-rehman-042bb285/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="weixin://dl/chat?SyedWaqi" target="_blank" rel="noopener noreferrer" aria-label="WeChat: SyedWaqi" title="WeChat: SyedWaqi"><i class="fa-brands fa-weixin"></i></a>
+              <a href="https://wa.me/923335566981" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +92 333 5566981" title="WhatsApp: +92 333 5566981"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.quick_links">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="navigation.about">About</a></li>
+            <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+            <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+            <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Company</h6>
+          <ul class="footer-links">
+            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.contact_info">Contact Info</h6>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Islamabad, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:ceo@ziyopvt.com">ceo@ziyopvt.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+92 333 5566 981</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+86 130 2107 8132</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2026 Ziyo International Pvt. Ltd. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/language-switcher.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/micro-interactions.js"></script>
+  <script src="assets/js/mobile-nav.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/accessibility.js"></script>
+
+  <style>
+    .hero-page { min-height: 60vh; }
+    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
+    .text-copper { color: var(--copper-gold) !important; }
+    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
+    .mine-detail-card { background: var(--dark-card); border-radius: var(--radius-lg); padding: var(--space-xl); border: 1px solid var(--dark-border); }
+    .spec-item { display: flex; flex-direction: column; }
+    .spec-label { font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .spec-value { font-size: var(--text-lg); font-weight: 600; color: var(--text-primary); }
+    .table-dark { --bs-table-bg: var(--dark-card); --bs-table-striped-bg: var(--dark-tertiary); }
+  </style>
+</body>
+</html>

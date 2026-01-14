@@ -1,0 +1,88 @@
+{
+  "name": "Ziyo International - Copper Mining Excellence",
+  "short_name": "Ziyo Mining",
+  "description": "Strategic copper mining operations in Pakistan with exceptional investment returns.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#B87333",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "finance"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%23B87333' width='192' height='192' rx='24'/%3E%3Ctext x='96' y='130' text-anchor='middle' font-family='Arial' font-size='100' font-weight='800' fill='%230A0A0A'%3EZ%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%23B87333' width='512' height='512' rx='64'/%3E%3Ctext x='256' y='350' text-anchor='middle' font-family='Arial' font-size='280' font-weight='800' fill='%230A0A0A'%3EZ%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'%3E%3Crect fill='%230A0A0A' width='540' height='720'/%3E%3Crect fill='%23B87333' x='20' y='20' width='500' height='200' rx='12'/%3E%3Ctext x='270' y='130' text-anchor='middle' font-family='Arial' font-size='36' fill='white'%3EZiyo International%3C/text%3E%3C/svg%3E",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Investment Opportunities",
+      "short_name": "Invest",
+      "description": "View investment opportunities",
+      "url": "/investment.html",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect fill='%23B87333' width='96' height='96' rx='12'/%3E%3Cpath fill='%230A0A0A' d='M48 20l-20 40h40l-20-40zM40 65h16v6H40v-6z'/%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our team",
+      "url": "/contact.html",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect fill='%23B87333' width='96' height='96' rx='12'/%3E%3Cpath fill='%230A0A0A' d='M20 28h56v40H20V28zm28 22l24-18H24l24 18z'/%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Our Projects",
+      "short_name": "Projects",
+      "description": "Explore our mining projects",
+      "url": "/projects.html",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect fill='%23B87333' width='96' height='96' rx='12'/%3E%3Cpath fill='%230A0A0A' d='M30 70V30l36 20-36 20z'/%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/contact.html",
+    "method": "GET",
+    "params": {
+      "title": "subject",
+      "text": "message",
+      "url": "url"
+    }
+  }
+}

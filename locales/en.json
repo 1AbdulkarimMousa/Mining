@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "lang": "en",
+    "locale": "en-US",
+    "dir": "ltr",
+    "title": "Ziyo International - Copper Mining Excellence",
+    "description": "Strategic copper mining operations in North Waziristan, Pakistan. $6.6M total investment with 100% ROI in Year 2 and 18-24 month payback."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "operations": "Operations",
+    "investment": "Investment",
+    "team": "Team",
+    "sustainability": "Sustainability",
+    "contact": "Contact",
+    "language_toggle": "中文"
+  },
+  "home": {
+    "hero": {
+      "title": "Unlocking Pakistan's",
+      "title_highlight": "Copper Potential",
+      "subtitle": "Strategic mining operations in North Waziristan with proven reserves, active production, and exceptional investment returns.",
+      "cta_primary": "Explore Projects",
+      "cta_secondary": "Investment Opportunity",
+      "scroll_text": "Scroll to explore"
+    },
+    "metrics": {
+      "acres": {
+        "value": "3,000",
+        "suffix": "+",
+        "label": "Acres"
+      },
+      "mines": {
+        "value": "5",
+        "suffix": "",
+        "label": "Active Mines"
+      },
+      "roi": {
+        "value": "50",
+        "suffix": "%",
+        "label": "ROI Potential"
+      },
+      "payback": {
+        "value": "24-32",
+        "suffix": "",
+        "label": "Months Payback"
+      }
+    },
+    "intro": {
+      "badge": "About Us",
+      "title": "Pioneering Responsible Mining",
+      "subtitle": "in Pakistan",
+      "description": "Founded in 2020, Ziyo International Enterprise is a focused trading and resource development firm with a clear vision: to responsibly unlock Pakistan's mineral potential and connect it with global markets.",
+      "cta": "Learn Our Story"
+    },
+    "projects": {
+      "badge": "Portfolio",
+      "title": "Mining Projects",
+      "subtitle": "Five strategically located copper mining sites with proven mineralization and active production capabilities.",
+      "view_all": "View All Projects",
+      "active": "Active",
+      "early_stage": "Early Stage",
+      "acres": "acres",
+      "grade": "Cu Grade"
+    },
+    "why_invest": {
+      "badge": "Investment",
+      "title": "Why Invest With Us",
+      "features": {
+        "proven_reserves": {
+          "title": "Proven Reserves",
+          "description": "SGS-verified copper content up to 10% with confirmed mineralization across 3,000+ acres."
+        },
+        "high_roi": {
+          "title": "High ROI",
+          "description": "100% ROI in Year 2 with $6.6M investment. Year 1 is construction and setup. Year 2 delivers $6.6M profit with complete payback. Year 3+ scales to $20M/year for exponential growth."
+        },
+        "experienced_team": {
+          "title": "Experienced Team",
+          "description": "PhD-led leadership with Tsinghua University credentials and cross-border expertise."
+        },
+        "community_support": {
+          "title": "Community Support",
+          "description": "Strong local relationships ensuring stable operations and social license to operate."
+        },
+        "year_round": {
+          "title": "Year-Round Operations",
+          "description": "All-weather accessibility enabling continuous 12-month production capability."
+        },
+        "market_access": {
+          "title": "Market Access",
+          "description": "Direct connections to Chinese buyers and established export channels."
+        }
+      }
+    },
+    "cta_section": {
+      "title": "Ready to Invest in Pakistan's",
+      "title_highlight": "Copper Future?",
+      "description": "Join us in developing one of Pakistan's most promising copper mining ventures. High returns, experienced team, proven reserves.",
+      "cta_primary": "Download Investment Report",
+      "cta_secondary": "Schedule a Meeting"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Our Story",
+      "title": "Building Pakistan's",
+      "title_highlight": "Mining Future",
+      "subtitle": "From ground-level trading to strategic mining operations, our journey reflects commitment, expertise, and vision."
+    },
+    "overview": {
+      "title": "Company Overview",
+      "founded": "Founded",
+      "founded_value": "2020",
+      "headquarters": "Headquarters",
+      "headquarters_value": "Islamabad, Pakistan",
+      "structure": "Structure",
+      "structure_value": "Private Limited (2025)",
+      "focus": "Focus",
+      "focus_value": "Copper Mining & Trading",
+      "description": "Ziyo International Enterprise began as a focused trading and resource development firm with a clear vision: to responsibly unlock Pakistan's mineral potential and connect it with global markets. The company was formally restructured as a Private Limited entity in 2025 to support expansion, transparency, and international collaboration."
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "phases": {
+        "2020": {
+          "year": "2020",
+          "title": "Foundation",
+          "description": "Company founded with focus on mineral trading and resource sourcing. Built relationships with local communities and stakeholders."
+        },
+        "2022": {
+          "year": "2022",
+          "title": "Expansion",
+          "description": "Secured mining agreements and partnerships. Developed scalable production models and established logistics routes."
+        },
+        "2024": {
+          "year": "2024",
+          "title": "Operations",
+          "description": "Active production across multiple sites. Initiated feasibility studies for copper ore grading and beneficiation."
+        },
+        "2025": {
+          "year": "2025",
+          "title": "Restructuring",
+          "description": "Formal restructuring as Private Limited company. Enhanced transparency and investor-ready corporate structure."
+        },
+        "2026": {
+          "year": "2026",
+          "title": "Growth",
+          "description": "Processing plant development. Expanding production capacity and international market penetration."
+        }
+      }
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To become Pakistan's leading responsible copper mining enterprise, connecting local mineral resources with global markets while creating sustainable value for communities and stakeholders."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To responsibly unlock Pakistan's mineral potential through scientific excellence, community partnership, and environmental stewardship, delivering exceptional returns for investors while contributing to local economic development."
+    },
+    "values": {
+      "title": "Core Values",
+      "items": {
+        "scientific": {
+          "title": "Scientific Excellence",
+          "description": "Data-driven decisions backed by rigorous technical analysis."
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "Open communication with stakeholders and partners."
+        },
+        "responsibility": {
+          "title": "Responsibility",
+          "description": "Environmental stewardship and community engagement."
+        },
+        "global": {
+          "title": "Global Outlook",
+          "description": "International standards with local implementation."
+        }
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Portfolio",
+      "title": "Mining Projects",
+      "subtitle": "Five strategically located copper mining sites spanning over 3,000 acres in North Waziristan, Pakistan."
+    },
+    "overview": {
+      "title": "Portfolio Overview",
+      "total_area": "Total Area",
+      "total_area_value": "3,078.63 acres",
+      "mines": "Mine Sites",
+      "mines_value": "5",
+      "licenses": "Prospecting Licenses",
+      "licenses_value": "3",
+      "agreements": "Village Agreements",
+      "agreements_value": "2"
+    },
+    "mines": {
+      "mine1": {
+        "name": "Mine 1",
+        "location": "Degan, Darwazgai",
+        "area": "1,096.35",
+        "grade": "0.5% - 10%",
+        "status": "Active Production",
+        "license": "Prospecting License",
+        "output": "10-30 tons/day",
+        "history": "1,500 tons produced",
+        "description": "Our flagship mining site with proven high-grade copper deposits. Active production with semi-mechanized operations and experienced local workforce."
+      },
+      "mine2": {
+        "name": "Mine 2",
+        "location": "Boyya Kalay",
+        "area": "400.16",
+        "grade": "0.5% - 10%",
+        "status": "Active",
+        "license": "Prospecting License",
+        "output": "10-30 tons/day",
+        "history": "200-800 tons sold",
+        "description": "Strategic location with excellent ore grades. Active operations with significant expansion potential."
+      },
+      "mine3": {
+        "name": "Mine 3",
+        "location": "North Waziristan",
+        "area": "497.12",
+        "grade": "0.5% - 10%",
+        "status": "Early Stage",
+        "license": "Prospecting License",
+        "output": "10-30 tons potential",
+        "history": "50-100 tons sold",
+        "description": "Early-stage development site with confirmed copper presence. Ready for scaled operations."
+      },
+      "mine4": {
+        "name": "Mine 4",
+        "location": "North Waziristan",
+        "area": "600.00",
+        "grade": "0.5% - 8%",
+        "status": "Most Productive",
+        "license": "Village Agreement",
+        "output": "30-50 tons/day",
+        "history": "3,000 tons sold",
+        "description": "Our most productive site with highest daily output. Village agreement ensures strong community support."
+      },
+      "mine5": {
+        "name": "Mine 5",
+        "location": "North Waziristan",
+        "area": "485.00",
+        "grade": "6% - 8%",
+        "status": "Early Stage",
+        "license": "Village Agreement",
+        "output": "Development phase",
+        "history": "Surface sampling confirmed",
+        "description": "High-grade copper oxide deposits confirmed through surface sampling. Early development stage."
+      }
+    },
+    "specs": {
+      "title": "Technical Specifications",
+      "ore_type": "Ore Type",
+      "ore_type_value": "Copper-bearing sulfide and oxide ores",
+      "grade_range": "Grade Range",
+      "grade_range_value": "0.5% - 10% Cu",
+      "associated": "Associated Minerals",
+      "associated_value": "Zinc, Silver, Gold, Cobalt, Nickel",
+      "depth": "Deposit Depth",
+      "depth_value": "Surface to shallow deposits",
+      "method": "Mining Method",
+      "method_value": "Open pit, manual/semi-mechanized"
+    },
+    "sgs": {
+      "title": "SGS Quality Certification",
+      "subtitle": "Independent testing by SGS Pakistan confirms exceptional ore quality",
+      "high_grade": "High-grade ore",
+      "high_grade_value": "4.71% - 8.91% Cu",
+      "standard": "Standard ore",
+      "standard_value": "1.58% - 2.89% Cu",
+      "concentrate": "Concentrate target",
+      "concentrate_value": "15% - 20% Cu",
+      "elements": {
+        "fe": "Iron (Fe): 12.32%",
+        "s": "Sulfur (S): 17.51%",
+        "sio2": "Silica (SiO2): 42.935%",
+        "traces": "Gold and silver traces confirmed"
+      }
+    }
+  },
+  "operations": {
+    "hero": {
+      "badge": "Operations",
+      "title": "Operational Excellence",
+      "subtitle": "From ore extraction to copper concentrate - our integrated approach delivers quality and efficiency."
+    },
+    "plant": {
+      "title": "Processing Plant",
+      "subtitle": "Proposed 350 tons/day flotation facility",
+      "specs": {
+        "capacity": {
+          "label": "Capacity",
+          "value": "350 tons/day"
+        },
+        "technology": {
+          "label": "Technology",
+          "value": "Flotation"
+        },
+        "throughput": {
+          "label": "Annual Throughput",
+          "value": "30,000 - 50,000 tons"
+        },
+        "recovery": {
+          "label": "Recovery Rate",
+          "value": ">88%"
+        },
+        "concentrate": {
+          "label": "Concentrate Grade",
+          "value": "15-20% Cu"
+        },
+        "location": {
+          "label": "Location",
+          "value": "Rashakai / Hattar Industrial Zone"
+        }
+      }
+    },
+    "process": {
+      "title": "Process Flow",
+      "stages": {
+        "crushing": {
+          "title": "Crushing",
+          "input": "0-350mm",
+          "output": "0-12mm",
+          "schedule": "2 shifts/day"
+        },
+        "grinding": {
+          "title": "Grinding",
+          "fineness": "68.4% passing 200 mesh",
+          "schedule": "3 shifts/day"
+        },
+        "flotation": {
+          "title": "Flotation",
+          "recovery": ">88%",
+          "output": "15-20% Cu concentrate"
+        },
+        "concentrate": {
+          "title": "Concentrate",
+          "monthly": "450 tons",
+          "annual": "2,700 tons"
+        }
+      }
+    },
+    "timeline": {
+      "title": "Construction Timeline",
+      "total": "Total Duration: 300 days",
+      "phases": {
+        "testing": "Mineral Processing Test (Days 1-30)",
+        "design": "Plant Design (Days 30-75)",
+        "manufacturing": "Equipment Manufacturing (Days 45-120)",
+        "delivery": "Shipping & Delivery (Days 135-255)",
+        "construction": "Civil Construction (Days 90-240)",
+        "installation": "Installation (Days 195-300)",
+        "commissioning": "Commissioning (Days 270-300)"
+      }
+    }
+  },
+  "investment": {
+    "hero": {
+      "badge": "Investment",
+      "title": "Investment Opportunity",
+      "subtitle": "Strategic investment in proven copper reserves with exceptional returns and fast payback.",
+      "cta_primary": "Download Investment Deck",
+      "cta_secondary": "Schedule Call"
+    },
+    "models": {
+      "title": "Partnership Models",
+      "fixed_fee": {
+        "title": "Fixed-Fee Exploration",
+        "description": "Third-party conducts surveys with fixed payment for services. Data belongs to project owner.",
+        "best_for": "Best for: Service providers"
+      },
+      "joint_venture": {
+        "title": "Joint Venture",
+        "description": "Shared equity investment with proportional profit distribution and joint operational management.",
+        "best_for": "Best for: Strategic partners"
+      },
+      "success_based": {
+        "title": "Success-Based Partnership",
+        "description": "Performance-linked returns with milestone payments. Negotiable terms based on outcomes.",
+        "best_for": "Best for: Results-focused investors"
+      }
+    },
+    "process": {
+      "title": "Investment Process",
+      "steps": {
+        "step1": "Initial meeting and project presentation",
+        "step2": "Technical team site visit",
+        "step3": "Due diligence review",
+        "step4": "Term sheet negotiation",
+        "step5": "Joint team constitution",
+        "step6": "Formal agreement signing",
+        "step7": "Project implementation"
+      }
+    },
+    "cta": {
+      "title": "Ready to Invest?",
+      "description": "Contact us to receive the full investment prospectus and schedule a detailed presentation.",
+      "button": "Contact Us"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "Leadership",
+      "title": "Our Team",
+      "subtitle": "Experienced professionals combining technical expertise, business acumen, and local knowledge."
+    },
+    "founder": {
+      "name": "Dr. Syed Waqi Ur Rehman",
+      "role": "Founder & Managing Partner",
+      "credentials": "PhD Environmental Engineering - Tsinghua University",
+      "bio": "Dr. Rehman holds a PhD in Environmental Engineering and Science from Tsinghua University, Beijing. His academic and technical foundation plays a critical role in shaping the company's approach to responsible mining, sustainability, and regulatory compliance.",
+      "expertise": {
+        "title": "Areas of Expertise",
+        "items": [
+          "Water treatment technologies",
+          "Environmental impact assessment",
+          "Industrial process optimization",
+          "Mineral processing and quality control",
+          "Cross-border China-Pakistan business operations"
+        ]
+      },
+      "experience": {
+        "title": "Professional Experience",
+        "items": [
+          {
+            "period": "2025-Present",
+            "role": "Postdoctoral Researcher",
+            "org": "Baofeng Biotechnology (Beijing)"
+          },
+          {
+            "period": "2020-Present",
+            "role": "CTO & Partner",
+            "org": "Ziyo International Enterprise"
+          },
+          {
+            "period": "2014-2019",
+            "role": "Research Fellow",
+            "org": "Tsinghua University"
+          },
+          {
+            "period": "2014",
+            "role": "Junior Executive",
+            "org": "SGS Pakistan"
+          }
+        ]
+      }
+    },
+    "competencies": {
+      "title": "Core Competencies",
+      "items": {
+        "scientific": {
+          "title": "Scientific Foundation",
+          "description": "PhD-level environmental engineering expertise"
+        },
+        "crossborder": {
+          "title": "Cross-Border Experience",
+          "description": "Extensive China-Pakistan business relationships"
+        },
+        "regulatory": {
+          "title": "Regulatory Knowledge",
+          "description": "Familiarity with Chinese mineral procurement standards"
+        },
+        "technical": {
+          "title": "Technical Excellence",
+          "description": "Data-driven approach to operational decisions"
+        },
+        "community": {
+          "title": "Community Relations",
+          "description": "Strong local stakeholder engagement"
+        }
+      }
+    },
+    "leadership": {
+      "title": "Leadership Team",
+      "subtitle": "Expert leaders driving our vision forward",
+      "members": {
+        "shah": {
+          "name": "Shah Jehangir",
+          "role": "Director"
+        },
+        "issa": {
+          "name": "Issa Khan",
+          "role": "Director"
+        },
+        "yang": {
+          "name": "Yang Yaxi",
+          "role": "Technical Lead"
+        },
+        "waseem": {
+          "name": "Waseem Khan",
+          "role": "Marketing Director"
+        }
+      }
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "badge": "ESG",
+      "title": "Sustainable Mining",
+      "subtitle": "Responsibility is at the core of everything we do. Our commitment to environmental stewardship and community engagement defines our approach."
+    },
+    "environment": {
+      "title": "Environmental Commitment",
+      "description": "Dr. Rehman's environmental engineering background ensures responsible practices across all operations.",
+      "items": [
+        "Responsible extraction practices",
+        "Waste management protocols",
+        "Water resource protection",
+        "Site rehabilitation planning",
+        "Regulatory compliance"
+      ]
+    },
+    "community": {
+      "title": "Community Engagement",
+      "description": "Strong relationships with local communities ensure sustainable operations and shared prosperity.",
+      "benefits": {
+        "villages": {
+          "title": "Local Villages",
+          "description": "Revenue and royalty payments"
+        },
+        "workers": {
+          "title": "Local Workers",
+          "description": "Employment opportunities"
+        },
+        "elders": {
+          "title": "Village Elders",
+          "description": "Decision-making involvement"
+        },
+        "economy": {
+          "title": "Local Economy",
+          "description": "Business development"
+        }
+      }
+    },
+    "social_license": {
+      "title": "Social License to Operate",
+      "items": [
+        "All operations have community consent",
+        "Revenue-sharing agreements in place",
+        "Local employment prioritized",
+        "Cultural and social considerations respected"
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "Contact",
+      "title": "Get In Touch",
+      "subtitle": "Let's discuss how we can work together to develop Pakistan's copper mining potential."
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Full Name",
+      "name_placeholder": "Your name",
+      "email": "Email Address",
+      "email_placeholder": "your@email.com",
+      "company": "Company",
+      "company_placeholder": "Your company (optional)",
+      "type": "Inquiry Type",
+      "type_placeholder": "Select type",
+      "type_options": {
+        "investment": "Investment Inquiry",
+        "partnership": "Partnership Opportunity",
+        "technical": "Technical Information",
+        "media": "Media/Press",
+        "other": "Other"
+      },
+      "message": "Message",
+      "message_placeholder": "Tell us about your interest...",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "label": "Address",
+        "value": "Islamabad, Pakistan"
+      },
+      "email": {
+        "label": "Email",
+        "value": "ceo@ziyopvt.com"
+      },
+      "phone_pk": {
+        "label": "Pakistan",
+        "value": "+92 333 5566 981"
+      },
+      "phone_cn": {
+        "label": "China",
+        "value": "+86 130 2107 8132"
+      }
+    },
+    "social": {
+      "title": "Connect With Us",
+      "linkedin": "LinkedIn",
+      "wechat": "WeChat"
+    }
+  },
+  "footer": {
+    "description": "Strategic copper mining operations in Pakistan, connecting local mineral resources with global markets.",
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Info",
+    "follow_us": "Follow Us",
+    "copyright": "2026 Ziyo International Pvt. Ltd. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "learn_more": "Learn More",
+    "view_details": "View Details",
+    "download": "Download",
+    "contact_us": "Contact Us",
+    "get_started": "Get Started",
+    "read_more": "Read More",
+    "see_all": "See All",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "acres": "acres",
+    "tons": "tons",
+    "days": "days",
+    "months": "months",
+    "years": "years"
+  }
+}

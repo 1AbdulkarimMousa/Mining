@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "lang": "zh",
+    "locale": "zh-CN",
+    "dir": "ltr",
+    "title": "自由国际 - 铜矿卓越开采",
+    "description": "巴基斯坦北瓦济里斯坦战略铜矿开采业务。660万美元总投资，第二年100%投资回报率，18-24个月回本。"
+  },
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "projects": "项目",
+    "operations": "运营",
+    "investment": "投资",
+    "team": "团队",
+    "sustainability": "可持续发展",
+    "contact": "联系我们",
+    "language_toggle": "English"
+  },
+  "home": {
+    "hero": {
+      "title": "释放巴基斯坦",
+      "title_highlight": "铜矿潜力",
+      "subtitle": "北瓦济里斯坦战略矿业运营，拥有已探明储量、活跃生产和卓越投资回报。",
+      "cta_primary": "探索项目",
+      "cta_secondary": "投资机会",
+      "scroll_text": "向下滚动探索"
+    },
+    "metrics": {
+      "acres": {
+        "value": "3,000",
+        "suffix": "+",
+        "label": "英亩"
+      },
+      "mines": {
+        "value": "5",
+        "suffix": "",
+        "label": "活跃矿区"
+      },
+      "roi": {
+        "value": "50",
+        "suffix": "%",
+        "label": "投资回报潜力"
+      },
+      "payback": {
+        "value": "24-32",
+        "suffix": "",
+        "label": "个月回收期"
+      }
+    },
+    "intro": {
+      "badge": "关于我们",
+      "title": "开创负责任采矿",
+      "subtitle": "在巴基斯坦",
+      "description": "自由国际企业成立于2020年，是一家专注于贸易和资源开发的公司，愿景明确：负责任地释放巴基斯坦的矿产潜力，并将其与全球市场对接。",
+      "cta": "了解我们的故事"
+    },
+    "projects": {
+      "badge": "项目组合",
+      "title": "矿业项目",
+      "subtitle": "五个战略性铜矿开采点，矿化作用已得到证实，生产能力活跃。",
+      "view_all": "查看所有项目",
+      "active": "活跃",
+      "early_stage": "早期阶段",
+      "acres": "英亩",
+      "grade": "铜品位"
+    },
+    "why_invest": {
+      "badge": "投资",
+      "title": "为什么投资我们",
+      "features": {
+        "proven_reserves": {
+          "title": "已探明储量",
+          "description": "SGS验证的铜含量高达10%，3,000多英亩范围内矿化作用已确认。"
+        },
+        "high_roi": {
+          "title": "高投资回报",
+          "description": "660万美元投资，第二年实现100%投资回报率。第一年为建设期，第二年实现660万美元利润并完全回本。第三年+可扩展至每年2000万美元实现指数级增长。"
+        },
+        "experienced_team": {
+          "title": "经验丰富的团队",
+          "description": "博士领导的团队，拥有清华大学背景和跨境专业知识。"
+        },
+        "community_support": {
+          "title": "社区支持",
+          "description": "稳固的当地关系确保运营稳定和社会经营许可。"
+        },
+        "year_round": {
+          "title": "全年运营",
+          "description": "全天候可达性，实现持续12个月生产能力。"
+        },
+        "market_access": {
+          "title": "市场准入",
+          "description": "与中国买家直接联系，出口渠道成熟。"
+        }
+      }
+    },
+    "cta_section": {
+      "title": "准备投资巴基斯坦的",
+      "title_highlight": "铜矿未来？",
+      "description": "加入我们，共同开发巴基斯坦最具前景的铜矿项目。高回报、专业团队、已探明储量。",
+      "cta_primary": "下载投资报告",
+      "cta_secondary": "预约会议"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "我们的故事",
+      "title": "建设巴基斯坦的",
+      "title_highlight": "矿业未来",
+      "subtitle": "从基层贸易到战略矿业运营，我们的发展历程体现了承诺、专业和愿景。"
+    },
+    "overview": {
+      "title": "公司概况",
+      "founded": "成立时间",
+      "founded_value": "2020年",
+      "headquarters": "总部",
+      "headquarters_value": "巴基斯坦伊斯兰堡",
+      "structure": "公司结构",
+      "structure_value": "私人有限公司（2025年）",
+      "focus": "业务重点",
+      "focus_value": "铜矿开采与贸易",
+      "description": "自由国际企业是一家专注于贸易和资源开发的公司，愿景明确：负责任地释放巴基斯坦的矿产潜力，并将其与全球市场对接。公司于2025年正式重组为私人有限公司，以支持扩展、透明度和国际合作。"
+    },
+    "timeline": {
+      "title": "发展历程",
+      "phases": {
+        "2020": {
+          "year": "2020",
+          "title": "创立",
+          "description": "公司成立，专注于矿产贸易和资源采购。与当地社区和利益相关者建立关系。"
+        },
+        "2022": {
+          "year": "2022",
+          "title": "扩展",
+          "description": "获得采矿协议和合作伙伴关系。开发可扩展的生产模式并建立物流路线。"
+        },
+        "2024": {
+          "year": "2024",
+          "title": "运营",
+          "description": "多个矿区活跃生产。启动铜矿石分级和选矿可行性研究。"
+        },
+        "2025": {
+          "year": "2025",
+          "title": "重组",
+          "description": "正式重组为私人有限公司。增强透明度和投资者友好型公司结构。"
+        },
+        "2026": {
+          "year": "2026",
+          "title": "增长",
+          "description": "选矿厂开发。扩大产能和国际市场渗透。"
+        }
+      }
+    },
+    "vision": {
+      "title": "愿景",
+      "description": "成为巴基斯坦领先的负责任铜矿开采企业，将本地矿产资源与全球市场对接，同时为社区和利益相关者创造可持续价值。"
+    },
+    "mission": {
+      "title": "使命",
+      "description": "通过科学卓越、社区合作和环境管理，负责任地释放巴基斯坦的矿产潜力，为投资者提供卓越回报，同时促进当地经济发展。"
+    },
+    "values": {
+      "title": "核心价值观",
+      "items": {
+        "scientific": {
+          "title": "科学卓越",
+          "description": "以严格技术分析为基础的数据驱动决策。"
+        },
+        "transparency": {
+          "title": "透明",
+          "description": "与利益相关者和合作伙伴开放沟通。"
+        },
+        "responsibility": {
+          "title": "责任",
+          "description": "环境管理和社区参与。"
+        },
+        "global": {
+          "title": "全球视野",
+          "description": "国际标准与本地实施相结合。"
+        }
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "项目组合",
+      "title": "矿业项目",
+      "subtitle": "五个战略性铜矿开采点，占地超过3,000英亩，位于巴基斯坦北瓦济里斯坦。"
+    },
+    "overview": {
+      "title": "项目组合概览",
+      "total_area": "总面积",
+      "total_area_value": "3,078.63英亩",
+      "mines": "矿区数量",
+      "mines_value": "5",
+      "licenses": "勘探许可证",
+      "licenses_value": "3",
+      "agreements": "村庄协议",
+      "agreements_value": "2"
+    },
+    "mines": {
+      "mine1": {
+        "name": "1号矿",
+        "location": "德干，达尔瓦兹盖",
+        "area": "1,096.35",
+        "grade": "0.5% - 10%",
+        "status": "活跃生产",
+        "license": "勘探许可证",
+        "output": "10-30吨/天",
+        "history": "已生产1,500吨",
+        "description": "我们的旗舰矿区，拥有已探明的高品位铜矿床。半机械化作业活跃生产，当地劳动力经验丰富。"
+      },
+      "mine2": {
+        "name": "2号矿",
+        "location": "博亚卡莱",
+        "area": "400.16",
+        "grade": "0.5% - 10%",
+        "status": "活跃",
+        "license": "勘探许可证",
+        "output": "10-30吨/天",
+        "history": "已销售200-800吨",
+        "description": "战略位置，矿石品位优良。运营活跃，扩展潜力巨大。"
+      },
+      "mine3": {
+        "name": "3号矿",
+        "location": "北瓦济里斯坦",
+        "area": "497.12",
+        "grade": "0.5% - 10%",
+        "status": "早期阶段",
+        "license": "勘探许可证",
+        "output": "潜力10-30吨",
+        "history": "已销售50-100吨",
+        "description": "早期开发阶段，铜矿存在已确认。已准备好扩大运营规模。"
+      },
+      "mine4": {
+        "name": "4号矿",
+        "location": "北瓦济里斯坦",
+        "area": "600.00",
+        "grade": "0.5% - 8%",
+        "status": "产量最高",
+        "license": "村庄协议",
+        "output": "30-50吨/天",
+        "history": "已销售3,000吨",
+        "description": "产量最高的矿区，日产量领先。村庄协议确保强大的社区支持。"
+      },
+      "mine5": {
+        "name": "5号矿",
+        "location": "北瓦济里斯坦",
+        "area": "485.00",
+        "grade": "6% - 8%",
+        "status": "早期阶段",
+        "license": "村庄协议",
+        "output": "开发阶段",
+        "history": "地表取样已确认",
+        "description": "高品位氧化铜矿床已通过地表取样确认。早期开发阶段。"
+      }
+    },
+    "specs": {
+      "title": "技术规格",
+      "ore_type": "矿石类型",
+      "ore_type_value": "含铜硫化矿和氧化矿",
+      "grade_range": "品位范围",
+      "grade_range_value": "0.5% - 10% 铜",
+      "associated": "伴生矿物",
+      "associated_value": "锌、银、金、钴、镍",
+      "depth": "矿床深度",
+      "depth_value": "地表至浅层矿床",
+      "method": "采矿方法",
+      "method_value": "露天开采，人工/半机械化"
+    },
+    "sgs": {
+      "title": "SGS质量认证",
+      "subtitle": "SGS巴基斯坦独立检测确认优异矿石品质",
+      "high_grade": "高品位矿石",
+      "high_grade_value": "4.71% - 8.91% 铜",
+      "standard": "标准矿石",
+      "standard_value": "1.58% - 2.89% 铜",
+      "concentrate": "精矿目标",
+      "concentrate_value": "15% - 20% 铜",
+      "elements": {
+        "fe": "铁 (Fe): 12.32%",
+        "s": "硫 (S): 17.51%",
+        "sio2": "二氧化硅 (SiO2): 42.935%",
+        "traces": "已确认含金和银痕量"
+      }
+    }
+  },
+  "operations": {
+    "hero": {
+      "badge": "运营",
+      "title": "卓越运营",
+      "subtitle": "从矿石开采到铜精矿 - 我们的综合方法确保质量和效率。"
+    },
+    "plant": {
+      "title": "选矿厂",
+      "subtitle": "拟建350吨/天浮选设施",
+      "specs": {
+        "capacity": {
+          "label": "产能",
+          "value": "350吨/天"
+        },
+        "technology": {
+          "label": "技术",
+          "value": "浮选"
+        },
+        "throughput": {
+          "label": "年处理量",
+          "value": "30,000 - 50,000吨"
+        },
+        "recovery": {
+          "label": "回收率",
+          "value": ">88%"
+        },
+        "concentrate": {
+          "label": "精矿品位",
+          "value": "15-20% 铜"
+        },
+        "location": {
+          "label": "位置",
+          "value": "拉沙凯/哈塔尔工业区"
+        }
+      }
+    },
+    "process": {
+      "title": "工艺流程",
+      "stages": {
+        "crushing": {
+          "title": "破碎",
+          "input": "0-350毫米",
+          "output": "0-12毫米",
+          "schedule": "每天2班"
+        },
+        "grinding": {
+          "title": "磨矿",
+          "fineness": "68.4%过200目",
+          "schedule": "每天3班"
+        },
+        "flotation": {
+          "title": "浮选",
+          "recovery": ">88%",
+          "output": "15-20% 铜精矿"
+        },
+        "concentrate": {
+          "title": "精矿",
+          "monthly": "450吨",
+          "annual": "2,700吨"
+        }
+      }
+    },
+    "timeline": {
+      "title": "建设时间表",
+      "total": "总工期：300天",
+      "phases": {
+        "testing": "选矿试验（第1-30天）",
+        "design": "工厂设计（第30-75天）",
+        "manufacturing": "设备制造（第45-120天）",
+        "delivery": "发运交货（第135-255天）",
+        "construction": "土建施工（第90-240天）",
+        "installation": "设备安装（第195-300天）",
+        "commissioning": "调试（第270-300天）"
+      }
+    }
+  },
+  "investment": {
+    "hero": {
+      "badge": "投资",
+      "title": "投资机会",
+      "subtitle": "投资已探明铜矿储量的战略项目，回报卓越，回收期短。",
+      "cta_primary": "下载投资方案",
+      "cta_secondary": "预约电话"
+    },
+    "models": {
+      "title": "合作模式",
+      "fixed_fee": {
+        "title": "固定费用勘探",
+        "description": "第三方进行勘探，固定支付服务费用。数据归项目所有者所有。",
+        "best_for": "适合：服务提供商"
+      },
+      "joint_venture": {
+        "title": "合资企业",
+        "description": "共享股权投资，按比例分配利润，联合运营管理。",
+        "best_for": "适合：战略合作伙伴"
+      },
+      "success_based": {
+        "title": "成功导向型合作",
+        "description": "与业绩挂钩的回报，里程碑付款。条款可根据结果协商。",
+        "best_for": "适合：注重结果的投资者"
+      }
+    },
+    "process": {
+      "title": "投资流程",
+      "steps": {
+        "step1": "初次会面和项目介绍",
+        "step2": "技术团队现场考察",
+        "step3": "尽职调查审核",
+        "step4": "条款书谈判",
+        "step5": "联合团队组建",
+        "step6": "正式协议签署",
+        "step7": "项目实施"
+      }
+    },
+    "cta": {
+      "title": "准备投资？",
+      "description": "联系我们获取完整投资说明书并预约详细介绍。",
+      "button": "联系我们"
+    }
+  },
+  "team": {
+    "hero": {
+      "badge": "领导团队",
+      "title": "我们的团队",
+      "subtitle": "经验丰富的专业人士，融合技术专长、商业智慧和当地知识。"
+    },
+    "founder": {
+      "name": "赛义德·瓦奇·乌尔·雷曼博士",
+      "role": "创始人兼执行合伙人",
+      "credentials": "环境工程博士 - 清华大学",
+      "bio": "雷曼博士拥有北京清华大学环境工程与科学博士学位。他的学术和技术背景在塑造公司负责任采矿、可持续发展和法规合规方面发挥着关键作用。",
+      "expertise": {
+        "title": "专业领域",
+        "items": [
+          "水处理技术",
+          "环境影响评估",
+          "工业过程优化",
+          "矿物加工和质量控制",
+          "中巴跨境商业运营"
+        ]
+      },
+      "experience": {
+        "title": "职业经历",
+        "items": [
+          {
+            "period": "2025年至今",
+            "role": "博士后研究员",
+            "org": "宝丰生物科技（北京）"
+          },
+          {
+            "period": "2020年至今",
+            "role": "首席技术官兼合伙人",
+            "org": "自由国际企业"
+          },
+          {
+            "period": "2014-2019年",
+            "role": "研究员",
+            "org": "清华大学"
+          },
+          {
+            "period": "2014年",
+            "role": "初级主管",
+            "org": "SGS巴基斯坦"
+          }
+        ]
+      }
+    },
+    "competencies": {
+      "title": "核心能力",
+      "items": {
+        "scientific": {
+          "title": "科学基础",
+          "description": "博士级环境工程专业知识"
+        },
+        "crossborder": {
+          "title": "跨境经验",
+          "description": "丰富的中巴商业关系"
+        },
+        "regulatory": {
+          "title": "法规知识",
+          "description": "熟悉中国矿产采购标准"
+        },
+        "technical": {
+          "title": "技术卓越",
+          "description": "数据驱动的运营决策方法"
+        },
+        "community": {
+          "title": "社区关系",
+          "description": "与当地利益相关者紧密联系"
+        }
+      }
+    },
+    "leadership": {
+      "title": "领导团队",
+      "subtitle": "推动我们愿景前进的专家领导",
+      "members": {
+        "shah": {
+          "name": "沙·贾汉吉尔",
+          "role": "董事"
+        },
+        "issa": {
+          "name": "伊萨·汗",
+          "role": "董事"
+        },
+        "yang": {
+          "name": "杨亚希",
+          "role": "技术负责人"
+        },
+        "waseem": {
+          "name": "瓦西姆·汗",
+          "role": "市场总监"
+        }
+      }
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "badge": "ESG",
+      "title": "可持续采矿",
+      "subtitle": "责任是我们一切工作的核心。我们对环境管理和社区参与的承诺定义了我们的方法。"
+    },
+    "environment": {
+      "title": "环境承诺",
+      "description": "雷曼博士的环境工程背景确保所有运营采用负责任的做法。",
+      "items": [
+        "负责任的开采实践",
+        "废物管理协议",
+        "水资源保护",
+        "场地修复规划",
+        "法规合规"
+      ]
+    },
+    "community": {
+      "title": "社区参与",
+      "description": "与当地社区的紧密关系确保可持续运营和共同繁荣。",
+      "benefits": {
+        "villages": {
+          "title": "当地村庄",
+          "description": "收入和特许权使用费支付"
+        },
+        "workers": {
+          "title": "当地工人",
+          "description": "就业机会"
+        },
+        "elders": {
+          "title": "村庄长老",
+          "description": "参与决策"
+        },
+        "economy": {
+          "title": "当地经济",
+          "description": "商业发展"
+        }
+      }
+    },
+    "social_license": {
+      "title": "社会经营许可",
+      "items": [
+        "所有运营均获得社区同意",
+        "收入分享协议已到位",
+        "优先雇用当地员工",
+        "尊重文化和社会考量"
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "badge": "联系",
+      "title": "联系我们",
+      "subtitle": "让我们讨论如何共同开发巴基斯坦的铜矿潜力。"
+    },
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "name_placeholder": "您的姓名",
+      "email": "电子邮箱",
+      "email_placeholder": "your@email.com",
+      "company": "公司",
+      "company_placeholder": "您的公司（选填）",
+      "type": "咨询类型",
+      "type_placeholder": "选择类型",
+      "type_options": {
+        "investment": "投资咨询",
+        "partnership": "合作机会",
+        "technical": "技术信息",
+        "media": "媒体/新闻",
+        "other": "其他"
+      },
+      "message": "留言",
+      "message_placeholder": "告诉我们您的兴趣...",
+      "submit": "发送消息",
+      "success": "谢谢！您的消息已成功发送。",
+      "error": "出现问题，请重试。"
+    },
+    "info": {
+      "title": "联系信息",
+      "address": {
+        "label": "地址",
+        "value": "巴基斯坦伊斯兰堡"
+      },
+      "email": {
+        "label": "电子邮箱",
+        "value": "ceo@ziyopvt.com"
+      },
+      "phone_pk": {
+        "label": "巴基斯坦",
+        "value": "+92 333 5566 981"
+      },
+      "phone_cn": {
+        "label": "中国",
+        "value": "+86 130 2107 8132"
+      }
+    },
+    "social": {
+      "title": "关注我们",
+      "linkedin": "领英",
+      "wechat": "微信"
+    }
+  },
+  "footer": {
+    "description": "巴基斯坦战略铜矿开采业务，将当地矿产资源与全球市场对接。",
+    "quick_links": "快速链接",
+    "contact_info": "联系信息",
+    "follow_us": "关注我们",
+    "copyright": "2026 自由国际私人有限公司 版权所有",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "common": {
+    "learn_more": "了解更多",
+    "view_details": "查看详情",
+    "download": "下载",
+    "contact_us": "联系我们",
+    "get_started": "开始",
+    "read_more": "阅读更多",
+    "see_all": "查看全部",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "close": "关闭",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "acres": "英亩",
+    "tons": "吨",
+    "days": "天",
+    "months": "个月",
+    "years": "年"
+  }
+}

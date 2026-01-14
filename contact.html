@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ziyo International for copper mining investment opportunities. Offices in Pakistan and China.">
+  <title>Contact Us - Ziyo International</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/micro-interactions.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-ziyo">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-ziyo" href="index.html">
+        <span class="brand-icon">Z</span><span>ZIYO</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-ziyo d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="index.html" data-i18n="navigation.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="about.html" data-i18n="navigation.about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="team.html" data-i18n="navigation.team">Team</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo active" href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="lang-toggle" data-lang-toggle><i class="fa-solid fa-globe"></i><span class="lang-text">中文</span></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-page">
+    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #1F1F1F 100%);"></div>
+    <div class="hero-content">
+      <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="contact.hero.badge">Contact</span>
+      <h1 class="hero-title fade-up stagger-1" data-i18n="contact.hero.title">Get In Touch</h1>
+      <p class="hero-subtitle fade-up stagger-2" data-i18n="contact.hero.subtitle">
+        Let's discuss how we can work together to develop Pakistan's copper mining potential.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-7 fade-up">
+          <div class="card-ziyo p-4 p-lg-5">
+            <h3 class="mb-4" data-i18n="contact.form.title">Send a Message</h3>
+            <form id="contactForm" data-validate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" data-i18n="contact.form.name">Full Name</label>
+                    <input type="text" class="form-control-ziyo" name="name" required data-i18n-placeholder="contact.form.name_placeholder" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" data-i18n="contact.form.email">Email Address</label>
+                    <input type="email" class="form-control-ziyo" name="email" required data-i18n-placeholder="contact.form.email_placeholder" placeholder="your@email.com">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" data-i18n="contact.form.company">Company</label>
+                    <input type="text" class="form-control-ziyo" name="company" data-i18n-placeholder="contact.form.company_placeholder" placeholder="Your company (optional)">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label" data-i18n="contact.form.type">Inquiry Type</label>
+                    <select class="form-control-ziyo form-select-ziyo" name="type" required>
+                      <option value="" data-i18n="contact.form.type_placeholder">Select type</option>
+                      <option value="investment" data-i18n="contact.form.type_options.investment">Investment Inquiry</option>
+                      <option value="partnership" data-i18n="contact.form.type_options.partnership">Partnership Opportunity</option>
+                      <option value="technical" data-i18n="contact.form.type_options.technical">Technical Information</option>
+                      <option value="media" data-i18n="contact.form.type_options.media">Media/Press</option>
+                      <option value="other" data-i18n="contact.form.type_options.other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label" data-i18n="contact.form.message">Message</label>
+                    <textarea class="form-control-ziyo" name="message" rows="5" required data-i18n-placeholder="contact.form.message_placeholder" placeholder="Tell us about your interest..."></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-ziyo btn-copper btn-lg w-100">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span data-i18n="contact.form.submit">Send Message</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="formSuccess" class="alert alert-success mt-4 d-none">
+              <i class="fa-solid fa-check-circle me-2"></i>
+              <span data-i18n="contact.form.success">Thank you! Your message has been sent successfully.</span>
+            </div>
+            <div id="formError" class="alert alert-danger mt-4 d-none">
+              <i class="fa-solid fa-exclamation-circle me-2"></i>
+              <span>Something went wrong. Please try again later.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-5 fade-up stagger-1">
+          <h3 class="mb-4" data-i18n="contact.info.title">Contact Information</h3>
+
+          <div class="contact-info-card mb-4">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h5 data-i18n="contact.info.address.label">Address</h5>
+              <p data-i18n="contact.info.address.value">Islamabad, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card mb-4">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h5 data-i18n="contact.info.email.label">Email</h5>
+              <a href="mailto:ceo@ziyopvt.com">ceo@ziyopvt.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card mb-4">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h5 data-i18n="contact.info.phone_pk.label">Pakistan</h5>
+              <a href="tel:+923335566981">+92 333 5566 981</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card mb-4">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h5 data-i18n="contact.info.phone_cn.label">China</h5>
+              <a href="tel:+8613021078132">+86 130 2107 8132</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h5 class="mb-3" data-i18n="contact.social.title">Connect With Us</h5>
+          <div class="d-flex gap-3">
+            <a href="https://www.linkedin.com/in/dr-syed-waqi-ur-rehman-042bb285/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="weixin://dl/chat?SyedWaqi" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WeChat: SyedWaqi" title="WeChat: SyedWaqi">
+              <i class="fa-brands fa-weixin"></i>
+            </a>
+            <a href="https://wa.me/923335566981" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp: +92 333 5566981" title="WhatsApp: +92 333 5566981">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offices -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title">Our Presence</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-up stagger-1">
+          <div class="feature-card h-100">
+            <div class="feature-card-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h5 class="feature-card-title">Islamabad Office</h5>
+            <p class="feature-card-desc">Corporate headquarters and business operations center.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up stagger-2">
+          <div class="feature-card h-100">
+            <div class="feature-card-icon">
+              <i class="fa-solid fa-mountain"></i>
+            </div>
+            <h5 class="feature-card-title">North Waziristan</h5>
+            <p class="feature-card-desc">Mining operations across 5 sites with local teams.</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-up stagger-3">
+          <div class="feature-card h-100">
+            <div class="feature-card-icon">
+              <i class="fa-solid fa-globe-asia"></i>
+            </div>
+            <h5 class="feature-card-title">Beijing Office</h5>
+            <p class="feature-card-desc">China market liaison and strategic advisory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-brand-name">
+              <span class="brand-icon">Z</span>
+              <span>ZIYO INTERNATIONAL</span>
+            </div>
+            <p class="footer-desc" data-i18n="footer.description">
+              Strategic copper mining operations in Pakistan, connecting local mineral resources with global markets.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/dr-syed-waqi-ur-rehman-042bb285/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="weixin://dl/chat?SyedWaqi" target="_blank" rel="noopener noreferrer" aria-label="WeChat: SyedWaqi" title="WeChat: SyedWaqi"><i class="fa-brands fa-weixin"></i></a>
+              <a href="https://wa.me/923335566981" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +92 333 5566981" title="WhatsApp: +92 333 5566981"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.quick_links">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="navigation.about">About</a></li>
+            <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+            <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+            <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Company</h6>
+          <ul class="footer-links">
+            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.contact_info">Contact Info</h6>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Islamabad, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:ceo@ziyopvt.com">ceo@ziyopvt.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+92 333 5566 981</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+86 130 2107 8132</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2026 Ziyo International Pvt. Ltd. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/language-switcher.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/micro-interactions.js"></script>
+  <script src="assets/js/mobile-nav.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/accessibility.js"></script>
+
+  <style>
+    .hero-page { min-height: 50vh; }
+    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
+    .text-copper { color: var(--copper-gold) !important; }
+    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
+
+    .contact-info-card { display: flex; gap: var(--space-lg); align-items: flex-start; }
+    .contact-icon { width: 50px; height: 50px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--dark-primary); flex-shrink: 0; }
+    .contact-details h5 { font-size: var(--text-sm); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs); }
+    .contact-details p, .contact-details a { font-size: var(--text-base); color: var(--text-primary); margin: 0; }
+    .contact-details a:hover { color: var(--copper-gold); }
+
+    .social-link { width: 50px; height: 50px; background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--text-secondary); transition: all var(--transition-fast); }
+    .social-link:hover { background: var(--copper-gradient); border-color: transparent; color: var(--dark-primary); }
+
+    .alert-success { background: rgba(80, 200, 120, 0.15); border: 1px solid rgba(80, 200, 120, 0.3); color: #50C878; border-radius: var(--radius-md); }
+
+    .error-message { color: #ef4444; font-size: var(--text-sm); margin-top: var(--space-xs); }
+    .form-control-ziyo.is-invalid { border-color: #ef4444; }
+    .form-control-ziyo.is-valid { border-color: #50C878; }
+  </style>
+</body>
+</html>

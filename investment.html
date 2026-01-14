@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Investment opportunity in Ziyo International copper mining - 16-50% ROI, 24-32 months payback. Download investment report.">
+  <title>Investment Opportunity - Ziyo International</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/micro-interactions.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-ziyo">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-ziyo" href="index.html">
+        <span class="brand-icon">Z</span><span>ZIYO</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-ziyo d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="index.html" data-i18n="navigation.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="about.html" data-i18n="navigation.about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo active" href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="team.html" data-i18n="navigation.team">Team</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ziyo" href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="lang-toggle" data-lang-toggle><i class="fa-solid fa-globe"></i><span class="lang-text">中文</span></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-page">
+    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #2d132c 100%);"></div>
+    <div class="hero-content">
+      <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="investment.hero.badge">Investment</span>
+      <h1 class="hero-title fade-up stagger-1" data-i18n="investment.hero.title">Investment Opportunity</h1>
+      <p class="hero-subtitle fade-up stagger-2" data-i18n="investment.hero.subtitle">
+        Strategic investment in proven copper reserves with exceptional returns and fast payback.
+      </p>
+      <div class="hero-cta fade-up stagger-3">
+        <a href="#contact-form" class="btn-ziyo btn-copper btn-lg">
+          <i class="fa-solid fa-download"></i>
+          <span data-i18n="investment.hero.cta_primary">Download Investment Deck</span>
+        </a>
+        <a href="contact.html" class="btn-ziyo btn-outline-copper btn-lg">
+          <span data-i18n="investment.hero.cta_secondary">Schedule Call</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Investment Calculator -->
+  <section class="section" id="investment-calculator">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title">Interactive Investment Calculator</h2>
+        <p class="section-subtitle mx-auto">Adjust parameters and see real-time financial projections based on current copper prices</p>
+      </div>
+
+      <!-- Live Copper Price Display -->
+      <div class="row justify-content-center mb-4 fade-up">
+        <div class="col-lg-10">
+          <div class="card-ziyo p-4" style="background: linear-gradient(135deg, rgba(184, 115, 51, 0.15) 0%, rgba(184, 115, 51, 0.05) 100%);">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <small class="text-secondary d-block mb-1">LME Copper Price (Live)</small>
+                <h3 class="text-copper mb-0" id="copper-price-live">$13,200/ton</h3>
+              </div>
+              <div class="col-md-3 border-start border-end border-secondary text-center">
+                <small class="text-secondary d-block mb-1">Status</small>
+                <div id="price-status"><i class="fa-solid fa-circle text-success"></i> Live</div>
+              </div>
+              <div class="col-md-3 text-center border-end border-secondary">
+                <small class="text-secondary d-block mb-1">Last Updated</small>
+                <div id="price-last-update">--:--</div>
+              </div>
+              <div class="col-md-3 text-center">
+                <small class="text-secondary d-block mb-1">Adjust Price Manually</small>
+                <input type="number" id="input-copper-price" class="calc-input text-center" data-param="copperPriceLME" value="13200" step="100" style="font-weight: 600; font-size: 0.9rem; padding: 0.4rem;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator Input Parameters -->
+      <div class="row g-4 fade-up stagger-1">
+        <!-- Column 1: Excavation & Processing -->
+        <div class="col-lg-4">
+          <div class="card-ziyo p-4">
+            <h5 class="mb-4 text-copper"><i class="fa-solid fa-industry"></i> Excavation & Processing</h5>
+            <div class="calc-input-grid">
+              <div class="calc-input-group">
+                <label for="input-excavation-cost">Excavation Cost ($/ton)</label>
+                <input type="number" id="input-excavation-cost" class="calc-input" data-param="excavationCost" value="85" step="5">
+                <small class="text-muted">Cost to excavate ore</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-processing-cost">Processing Cost ($/ton)</label>
+                <input type="number" id="input-processing-cost" class="calc-input" data-param="processingCost" value="50" step="5">
+                <small class="text-muted">Cost to process ore</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-plant-capacity">Plant Capacity (tons/day)</label>
+                <input type="number" id="input-plant-capacity" class="calc-input" data-param="plantCapacity" value="350" step="50">
+                <small class="text-muted">Daily processing capacity</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-operating-days">Operating Days (per year)</label>
+                <input type="number" id="input-operating-days" class="calc-input" data-param="operatingDays" value="300" step="10">
+                <small class="text-muted">Active production days</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Copper Content & Recovery -->
+        <div class="col-lg-4">
+          <div class="card-ziyo p-4">
+            <h5 class="mb-4 text-copper"><i class="fa-solid fa-flask"></i> Copper Content & Recovery</h5>
+            <div class="calc-input-grid">
+              <div class="calc-input-group">
+                <label for="input-raw-copper">Raw Copper Percentage (%)</label>
+                <input type="number" id="input-raw-copper" class="calc-input" data-param="rawCopperPercentage" value="2.5" step="0.1">
+                <small class="text-muted">Copper content in ore</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-recovery-rate">Plant Recovery Rate (%)</label>
+                <input type="number" id="input-recovery-rate" class="calc-input" data-param="recoveryRate" value="88" step="1">
+                <small class="text-muted">Processing efficiency</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-final-product">Final Product Grade (%)</label>
+                <input type="number" id="input-final-product" class="calc-input" data-param="finalProductPercentage" value="18" step="1">
+                <small class="text-muted">Concentrate copper grade</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-lme-payable">LME Payable Rate (%)</label>
+                <input type="number" id="input-lme-payable" class="calc-input" data-param="lmePayableRate" value="96.5" step="0.5">
+                <small class="text-muted">% of LME price paid</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Investment & Charges -->
+        <div class="col-lg-4">
+          <div class="card-ziyo p-4">
+            <h5 class="mb-4 text-copper"><i class="fa-solid fa-dollar-sign"></i> Investment & Charges</h5>
+            <div class="calc-input-grid">
+              <div class="calc-input-group">
+                <label for="input-total-investment">Total Investment ($)</label>
+                <input type="number" id="input-total-investment" class="calc-input" data-param="totalInvestment" value="6600000" step="100000">
+                <small class="text-muted">Initial capital</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-exploration-acres">Exploration Area (acres)</label>
+                <input type="number" id="input-exploration-acres" class="calc-input" data-param="explorationAcres" value="1500" step="100">
+                <small class="text-muted">Land to explore</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-treatment-charge">Treatment Charge ($/ton)</label>
+                <input type="number" id="input-treatment-charge" class="calc-input" data-param="treatmentCharge" value="80" step="5">
+                <small class="text-muted">TC per ton concentrate</small>
+              </div>
+              <div class="calc-input-group">
+                <label for="input-waste-disposal">Waste Disposal Charge ($/ton)</label>
+                <input type="number" id="input-waste-disposal" class="calc-input" data-param="wasteDisposalCharge" value="5" step="1">
+                <small class="text-muted">Waste disposal per ton ore</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reset Button Row -->
+        <div class="col-12 text-center">
+          <button id="calc-reset" class="btn-ziyo btn-outline-copper btn-lg">
+            <i class="fa-solid fa-rotate-right"></i> Reset All to Defaults
+          </button>
+        </div>
+      </div>
+
+      <!-- Calculator Results -->
+      <div class="row g-4 mt-4 fade-up stagger-2">
+        <div class="col-12">
+          <h4 class="text-center text-copper mb-4"><i class="fa-solid fa-chart-pie"></i> Calculation Results</h4>
+        </div>
+
+        <!-- Production Metrics -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-industry"></i> Production Metrics (Year 2)</h6>
+            <div class="calc-result-item">
+              <span class="label">Annual Ore Processing:</span>
+              <span class="value" id="calc-annual-processing">105,000 tons</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Raw Copper in Ore:</span>
+              <span class="value" id="calc-raw-copper">2,625 tons Cu</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Recovered Copper:</span>
+              <span class="value text-copper" id="calc-recovered-copper">2,310 tons Cu</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Concentrate Produced:</span>
+              <span class="value" id="calc-concentrate">12,833 tons</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Payable Copper (LME):</span>
+              <span class="value text-copper" id="calc-payable-copper">2,229 tons Cu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cost Breakdown -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-coins"></i> Cost Breakdown (Year 2)</h6>
+            <div class="calc-result-item">
+              <span class="label">Excavation + Processing:</span>
+              <span class="value text-danger" id="calc-excavation-processing">$14.18M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Treatment Charges (TC):</span>
+              <span class="value text-warning" id="calc-treatment-charges">$1.03M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Waste Disposal Charges:</span>
+              <span class="value text-warning" id="calc-waste-disposal">$0.53M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Total TC/WD:</span>
+              <span class="value" id="calc-total-tcwd">$1.55M</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Total Operating Costs:</span>
+              <span class="value text-danger" id="calc-operating-costs">$14.18M</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revenue & Profit -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-chart-line"></i> Revenue & Profit (Year 2)</h6>
+            <div class="calc-result-item">
+              <span class="label">Gross Revenue (before TC/WD):</span>
+              <span class="value text-success" id="calc-gross-revenue">$29.42M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Net Revenue (after TC/WD):</span>
+              <span class="value text-success" id="calc-net-revenue">$27.87M</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Net Profit:</span>
+              <span class="value text-copper" id="calc-net-profit">$13.70M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Profit per Ton Ore:</span>
+              <span class="value" id="calc-profit-per-ton-ore">$130.46</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Profit per Ton Copper:</span>
+              <span class="value" id="calc-profit-per-ton-copper">$5,930</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROI & Payback -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-percent"></i> Investment Returns</h6>
+            <div class="calc-result-item">
+              <span class="label">Total Investment:</span>
+              <span class="value">$6.60M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Year 2 Net Profit:</span>
+              <span class="value text-copper" id="calc-net-profit-2">$13.70M</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Year 2 ROI:</span>
+              <span class="value text-success" id="calc-roi">207.5%</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Payback Period:</span>
+              <span class="value" id="calc-payback">5.8 months</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exploration Costs Breakdown -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-magnifying-glass"></i> Exploration Costs</h6>
+            <div class="calc-result-item">
+              <span class="label">Geological Mapping:</span>
+              <span class="value" id="calc-exploration-mapping">$75,000</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Drilling:</span>
+              <span class="value" id="calc-exploration-drilling">$750,000</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Laboratory Analysis:</span>
+              <span class="value" id="calc-exploration-lab">$125,000</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Topographical Surveys:</span>
+              <span class="value" id="calc-exploration-surveys">$50,000</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Total Exploration:</span>
+              <span class="value text-copper" id="calc-exploration-total">$1,000,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 3+ Projections -->
+        <div class="col-lg-6">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-3"><i class="fa-solid fa-rocket"></i> Year 3+ Expansion Projections</h6>
+            <p class="small text-muted mb-3">Double capacity with additional investment</p>
+            <div class="calc-result-item">
+              <span class="label">Annual Ore Processing:</span>
+              <span class="value" id="calc-year3-processing">210,000 tons</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Recovered Copper:</span>
+              <span class="value text-copper" id="calc-year3-copper">4,620 tons Cu</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Net Revenue (after TC/WD):</span>
+              <span class="value text-success" id="calc-year3-revenue">$55.75M</span>
+            </div>
+            <div class="calc-result-item">
+              <span class="label">Operating Costs:</span>
+              <span class="value text-danger" id="calc-year3-costs">$28.35M</span>
+            </div>
+            <div class="calc-result-item highlight">
+              <span class="label">Net Profit:</span>
+              <span class="value text-copper" id="calc-year3-profit">$27.40M</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Investment Summary Chart -->
+        <div class="col-12">
+          <div class="card-ziyo p-4">
+            <h6 class="text-secondary mb-4"><i class="fa-solid fa-chart-bar"></i> Investment Summary (3-Year Timeline)</h6>
+            <div id="investment-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Models -->
+  <section class="section section-dark" id="models">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title" data-i18n="investment.models.title">Partnership Models</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 fade-up stagger-1">
+          <div class="card-ziyo h-100 p-4">
+            <div class="feature-card-icon mb-3">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <h4 class="mb-2" data-i18n="investment.models.fixed_fee.title">Fixed-Fee Exploration</h4>
+            <p class="text-secondary small mb-3" data-i18n="investment.models.fixed_fee.description">
+              Third-party conducts surveys with fixed payment for services. Data belongs to project owner.
+            </p>
+            <span class="badge bg-copper-subtle text-copper" data-i18n="investment.models.fixed_fee.best_for">Best for: Service providers</span>
+          </div>
+        </div>
+        <div class="col-lg-4 fade-up stagger-2">
+          <div class="card-ziyo h-100 p-4 border-copper">
+            <span class="badge bg-copper position-absolute" style="top: -10px; right: 20px;">Recommended</span>
+            <div class="feature-card-icon mb-3">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h4 class="mb-2" data-i18n="investment.models.joint_venture.title">Joint Venture</h4>
+            <p class="text-secondary small mb-3" data-i18n="investment.models.joint_venture.description">
+              Shared equity investment with proportional profit distribution and joint operational management.
+            </p>
+            <span class="badge bg-copper-subtle text-copper" data-i18n="investment.models.joint_venture.best_for">Best for: Strategic partners</span>
+          </div>
+        </div>
+        <div class="col-lg-4 fade-up stagger-3">
+          <div class="card-ziyo h-100 p-4">
+            <div class="feature-card-icon mb-3">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h4 class="mb-2" data-i18n="investment.models.success_based.title">Success-Based Partnership</h4>
+            <p class="text-secondary small mb-3" data-i18n="investment.models.success_based.description">
+              Performance-linked returns with milestone payments. Negotiable terms based on outcomes.
+            </p>
+            <span class="badge bg-copper-subtle text-copper" data-i18n="investment.models.success_based.best_for">Best for: Results-focused investors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title" data-i18n="investment.process.title">Investment Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 fade-up stagger-1">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h5 data-i18n="investment.process.steps.step1">Initial meeting and project presentation</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 fade-up stagger-2">
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h5 data-i18n="investment.process.steps.step2">Technical team site visit</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 fade-up stagger-3">
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h5 data-i18n="investment.process.steps.step3">Due diligence review</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 fade-up stagger-4">
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h5 data-i18n="investment.process.steps.step4">Term sheet negotiation</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up stagger-5">
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <h5 data-i18n="investment.process.steps.step5">Joint team constitution</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up stagger-6">
+            <div class="process-step">
+              <div class="step-number">6</div>
+              <h5 data-i18n="investment.process.steps.step6">Formal agreement signing</h5>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 fade-up">
+            <div class="process-step process-step-final">
+              <div class="step-number">7</div>
+              <h5 data-i18n="investment.process.steps.step7">Project implementation</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark" id="contact-form">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center fade-up">
+          <h2 class="section-title mb-3" data-i18n="investment.cta.title">Ready to Invest?</h2>
+          <p class="section-subtitle mx-auto mb-4" data-i18n="investment.cta.description">
+            Contact us to receive the full investment prospectus and schedule a detailed presentation.
+          </p>
+          <a href="contact.html" class="btn-ziyo btn-copper btn-lg">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-i18n="investment.cta.button">Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-brand-name">
+              <span class="brand-icon">Z</span>
+              <span>ZIYO INTERNATIONAL</span>
+            </div>
+            <p class="footer-desc" data-i18n="footer.description">
+              Strategic copper mining operations in Pakistan, connecting local mineral resources with global markets.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/dr-syed-waqi-ur-rehman-042bb285/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="weixin://dl/chat?SyedWaqi" target="_blank" rel="noopener noreferrer" aria-label="WeChat: SyedWaqi" title="WeChat: SyedWaqi"><i class="fa-brands fa-weixin"></i></a>
+              <a href="https://wa.me/923335566981" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +92 333 5566981" title="WhatsApp: +92 333 5566981"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.quick_links">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="navigation.about">About</a></li>
+            <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
+            <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
+            <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
+            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-title">Company</h6>
+          <ul class="footer-links">
+            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-title" data-i18n="footer.contact_info">Contact Info</h6>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Islamabad, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:ceo@ziyopvt.com">ceo@ziyopvt.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+92 333 5566 981</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+86 130 2107 8132</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2026 Ziyo International Pvt. Ltd. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms-of-service.html" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/language-switcher.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/micro-interactions.js"></script>
+  <script src="assets/js/mobile-nav.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/investment-calculator.js"></script>
+
+  <style>
+    .hero-page { min-height: 60vh; }
+    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
+    .text-copper { color: var(--copper-gold) !important; }
+    .bg-copper { background: var(--copper-gradient); color: var(--dark-primary); }
+    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
+    .border-copper { border: 2px solid var(--copper-gold) !important; }
+    .table-dark { --bs-table-bg: var(--dark-tertiary); }
+
+    .process-step { background: var(--dark-card); border-radius: var(--radius-lg); padding: var(--space-xl); text-align: center; border: 1px solid var(--dark-border); height: 100%; }
+    .process-step-final { border-color: var(--copper-gold); }
+    .step-number { width: 50px; height: 50px; background: var(--copper-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-xl); font-weight: 800; color: var(--dark-primary); margin: 0 auto var(--space-md); }
+    .process-step h5 { color: var(--text-secondary); font-size: var(--text-sm); font-weight: 500; margin: 0; }
+
+    /* Investment Model Styles */
+    .model-detail-grid { display: grid; gap: var(--space-md); }
+    .model-detail-item { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
+    .model-detail-item .label { color: var(--text-secondary); font-size: var(--text-sm); }
+    .model-detail-item .value { color: var(--text-primary); font-weight: 600; }
+
+    .exploration-breakdown { display: flex; flex-direction: column; gap: var(--space-md); }
+    .exploration-item { display: flex; justify-content: space-between; align-items: start; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
+    .exploration-label { display: flex; align-items: center; gap: var(--space-sm); flex: 1; }
+    .exploration-label i { color: var(--copper-gold); font-size: var(--text-lg); }
+    .exploration-calc { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+    .exploration-total { display: flex; justify-content: space-between; padding-top: var(--space-md); margin-top: var(--space-sm); border-top: 2px solid var(--copper-gold); font-size: var(--text-lg); }
+
+    .calculation-card { background: var(--dark-tertiary); padding: var(--space-lg); border-radius: var(--radius-md); height: 100%; }
+    .calc-step { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
+    .calc-step:last-child { border-bottom: none; padding-top: var(--space-md); margin-top: var(--space-sm); border-top: 2px solid var(--dark-border); }
+    .calc-step span { color: var(--text-secondary); }
+    .calc-step strong { color: var(--text-primary); }
+
+    /* Interactive Calculator Styles */
+    .calc-input-grid { display: flex; flex-direction: column; gap: var(--space-lg); }
+    .calc-input-group { display: flex; flex-direction: column; gap: var(--space-xs); }
+    .calc-input-group label { color: var(--text-primary); font-weight: 600; font-size: var(--text-sm); }
+    .calc-input {
+      background: var(--dark-tertiary);
+      border: 1px solid var(--dark-border);
+      color: var(--text-primary);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--radius-md);
+      font-size: var(--text-base);
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+    .calc-input:focus {
+      outline: none;
+      border-color: var(--copper-gold);
+      box-shadow: 0 0 0 3px rgba(184, 115, 51, 0.1);
+    }
+    .calc-input:hover { border-color: rgba(184, 115, 51, 0.5); }
+
+    .calc-result-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-sm) 0;
+      border-bottom: 1px solid var(--dark-border);
+    }
+    .calc-result-item:last-child { border-bottom: none; }
+    .calc-result-item.highlight {
+      padding-top: var(--space-md);
+      margin-top: var(--space-sm);
+      border-top: 2px solid var(--copper-gold);
+      border-bottom: none;
+    }
+    .calc-result-item .label { color: var(--text-secondary); font-size: var(--text-sm); }
+    .calc-result-item .value { color: var(--text-primary); font-weight: 600; font-size: var(--text-base); }
+
+    /* Simple Chart Styles */
+    .simple-chart { display: flex; flex-direction: column; gap: var(--space-md); }
+    .chart-row { display: flex; align-items: center; gap: var(--space-md); }
+    .chart-label {
+      min-width: 80px;
+      color: var(--text-secondary);
+      font-size: var(--text-sm);
+      font-weight: 600;
+    }
+    .chart-bar-container {
+      flex: 1;
+      height: 32px;
+      background: var(--dark-tertiary);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .chart-bar {
+      height: 100%;
+      border-radius: var(--radius-md);
+      transition: width 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: var(--space-sm);
+    }
+    .chart-value {
+      min-width: 100px;
+      text-align: right;
+      font-weight: 700;
+      font-size: var(--text-base);
+    }
+
+    /* Toast Notification Styles */
+    .toast-notification {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--dark-card);
+      border: 1px solid var(--copper-gold);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+    .toast-notification.show { opacity: 1; transform: translateY(0); }
+    .toast-notification i { font-size: var(--text-lg); }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .chart-row { flex-direction: column; align-items: flex-start; gap: var(--space-xs); }
+      .chart-label, .chart-value { min-width: auto; }
+      .chart-bar-container { width: 100%; }
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,589 @@
+/* ============================================
+   ZIYO INTERNATIONAL - MOBILE ENHANCEMENTS
+   Dedicated mobile-first responsive styles
+   Version: 2.0 | January 2026
+   ============================================ */
+
+/* ============================================
+   1. MOBILE NAVIGATION
+   ============================================ */
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Menu Content */
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 80px 20px;
+}
+
+.mobile-menu-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-menu-nav li {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu-overlay.active .mobile-menu-nav li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(2) { transition-delay: 0.15s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(3) { transition-delay: 0.2s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(4) { transition-delay: 0.25s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(5) { transition-delay: 0.3s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(6) { transition-delay: 0.35s; }
+.mobile-menu-overlay.active .mobile-menu-nav li:nth-child(7) { transition-delay: 0.4s; }
+
+.mobile-menu-nav a {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-nav a:hover,
+.mobile-menu-nav a.active {
+  color: var(--copper-gold);
+}
+
+/* Mobile Menu Toggle (Hamburger) */
+.mobile-menu-toggle {
+  display: none;
+  width: 32px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1001;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu-toggle span:nth-child(1) { top: 0; }
+.mobile-menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.mobile-menu-toggle span:nth-child(3) { bottom: 0; }
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+@media (max-width: 991.98px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+/* ============================================
+   2. MOBILE TYPOGRAPHY
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  /* Fluid typography scaling */
+  :root {
+    --text-6xl: clamp(2.5rem, 2rem + 4vw, 4rem);
+    --text-5xl: clamp(2rem, 1.5rem + 3.5vw, 3.5rem);
+    --text-4xl: clamp(1.75rem, 1.25rem + 3vw, 2.5rem);
+    --text-3xl: clamp(1.5rem, 1.25rem + 2vw, 2rem);
+    --text-2xl: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
+    --text-xl: clamp(1.125rem, 1rem + 0.75vw, 1.25rem);
+  }
+
+  h1, .hero-title {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+}
+
+/* ============================================
+   3. MOBILE HERO SECTION
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: 100svh; /* Use svh for better mobile support */
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .hero-content {
+    padding: var(--space-lg);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .hero-cta .btn-ziyo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .scroll-indicator {
+    bottom: var(--space-xl);
+  }
+}
+
+/* ============================================
+   4. MOBILE CARDS
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .card-ziyo {
+    padding: var(--space-lg);
+  }
+
+  .feature-card {
+    padding: var(--space-xl);
+  }
+
+  .feature-card-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-bottom: var(--space-md);
+  }
+
+  .metric-card {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .metric-card-value {
+    font-size: var(--text-3xl);
+  }
+
+  /* Project Cards */
+  .project-card {
+    aspect-ratio: 4/3;
+  }
+
+  .project-card-content {
+    padding: var(--space-md);
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card-title {
+    font-size: var(--text-lg);
+  }
+}
+
+/* ============================================
+   5. MOBILE METRICS
+   ============================================ */
+
+@media (max-width: 575.98px) {
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+
+  .metric-item {
+    padding: var(--space-md);
+  }
+
+  .metric-value {
+    font-size: var(--text-2xl);
+  }
+
+  .metric-label {
+    font-size: var(--text-xs);
+  }
+}
+
+/* ============================================
+   6. MOBILE TIMELINE
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .timeline-item .timeline-dot,
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 5px;
+    right: auto;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-year {
+    font-size: var(--text-xl);
+  }
+}
+
+/* ============================================
+   7. MOBILE FORMS
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .form-control-ziyo {
+    padding: 14px 16px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .form-group {
+    margin-bottom: var(--space-md);
+  }
+
+  textarea.form-control-ziyo {
+    min-height: 120px;
+  }
+}
+
+/* ============================================
+   8. MOBILE BUTTONS
+   ============================================ */
+
+@media (max-width: 575.98px) {
+  .btn-ziyo {
+    padding: 14px 24px;
+    font-size: var(--text-sm);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-lg {
+    padding: 16px 28px;
+  }
+
+  .btn-sm {
+    padding: 10px 18px;
+  }
+}
+
+/* ============================================
+   9. MOBILE FOOTER
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding: var(--space-3xl) 0 var(--space-xl);
+  }
+
+  .footer-brand-name {
+    font-size: var(--text-lg);
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+  }
+}
+
+/* ============================================
+   10. MOBILE SPACING
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section-sm {
+    padding: var(--space-2xl) 0;
+  }
+
+  .container {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .mb-3xl { margin-bottom: var(--space-2xl); }
+  .mb-2xl { margin-bottom: var(--space-xl); }
+  .mb-xl { margin-bottom: var(--space-lg); }
+}
+
+/* ============================================
+   11. MOBILE TOUCH OPTIMIZATIONS
+   ============================================ */
+
+@media (max-width: 991.98px) {
+  /* Larger touch targets */
+  .nav-link-ziyo {
+    padding: var(--space-md) !important;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    padding: var(--space-xs) 0;
+  }
+
+  .footer-social a {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Disable hover effects on touch */
+  .card-ziyo:hover {
+    transform: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .tilt-effect:hover {
+    transform: none;
+  }
+}
+
+/* ============================================
+   12. MOBILE ANIMATIONS
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  /* Simplified animations for performance */
+  .fade-up {
+    transform: translateY(30px);
+  }
+
+  .slide-left,
+  .slide-right {
+    transform: translateY(30px);
+  }
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(40px);
+  }
+
+  /* Reduce stagger delays */
+  .stagger-1 { transition-delay: 0.05s; }
+  .stagger-2 { transition-delay: 0.1s; }
+  .stagger-3 { transition-delay: 0.15s; }
+  .stagger-4 { transition-delay: 0.2s; }
+  .stagger-5 { transition-delay: 0.25s; }
+  .stagger-6 { transition-delay: 0.3s; }
+}
+
+/* ============================================
+   13. MOBILE LANDSCAPE
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .mobile-menu-nav a {
+    font-size: 1.25rem;
+    padding: 8px 16px;
+  }
+}
+
+/* ============================================
+   14. SAFE AREA SUPPORT (iPhone X+)
+   ============================================ */
+
+@supports (padding: max(0px)) {
+  .navbar-ziyo {
+    padding-top: max(var(--space-md), env(safe-area-inset-top));
+    padding-left: max(var(--space-lg), env(safe-area-inset-left));
+    padding-right: max(var(--space-lg), env(safe-area-inset-right));
+  }
+
+  .footer {
+    padding-bottom: max(var(--space-xl), env(safe-area-inset-bottom));
+  }
+
+  .mobile-menu-overlay {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ============================================
+   15. TABLET SPECIFIC
+   ============================================ */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .timeline::before {
+    left: 50%;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 50%;
+  }
+}
+
+/* ============================================
+   16. PULL TO REFRESH PREVENTION
+   ============================================ */
+
+html {
+  overscroll-behavior-y: none;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+/* ============================================
+   17. MOBILE-SPECIFIC UTILITIES
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  .hide-mobile { display: none !important; }
+  .show-mobile { display: block !important; }
+  .show-mobile-flex { display: flex !important; }
+  .show-mobile-inline { display: inline !important; }
+
+  .text-center-mobile { text-align: center !important; }
+  .text-left-mobile { text-align: left !important; }
+
+  .full-width-mobile { width: 100% !important; }
+
+  .order-first-mobile { order: -1; }
+  .order-last-mobile { order: 99; }
+}
+
+@media (min-width: 768px) {
+  .hide-desktop { display: none !important; }
+  .show-desktop { display: block !important; }
+}
+
+/* ============================================
+   18. SMOOTH SCROLLING FIX
+   ============================================ */
+
+@media (max-width: 767.98px) {
+  /* Disable smooth scroll on mobile for better performance */
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Re-enable for anchor links only */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ============================================
+   19. DARK MODE SYSTEM PREFERENCE
+   ============================================ */
+
+/* Already dark theme, but ensure system preference is respected */
+@media (prefers-color-scheme: light) {
+  /* Keep dark theme as default, but can add light mode toggle later */
+}
+
+/* ============================================
+   20. HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .card-ziyo {
+    border: 2px solid var(--text-secondary);
+  }
+
+  .btn-ziyo {
+    border: 2px solid currentColor;
+  }
+
+  .form-control-ziyo {
+    border: 2px solid var(--text-secondary);
+  }
+}
