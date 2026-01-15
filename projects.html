@@ -48,13 +48,32 @@
 
   <!-- Hero -->
   <section class="hero hero-page">
-    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #1a1a2e 100%);"></div>
+    <div class="hero-background"></div>
     <div class="hero-content">
       <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="projects.hero.badge">Portfolio</span>
       <h1 class="hero-title fade-up stagger-1" data-i18n="projects.hero.title">Mining Projects</h1>
       <p class="hero-subtitle fade-up stagger-2" data-i18n="projects.hero.subtitle">
         Five strategically located copper mining sites spanning over 3,000 acres in North Waziristan, Pakistan.
       </p>
+      <!-- Quick Stats Pills -->
+      <div class="hero-stats-pills fade-up stagger-3">
+        <div class="hero-stat-pill">
+          <i class="fa-solid fa-expand"></i>
+          <span>3,078 Acres</span>
+        </div>
+        <div class="hero-stat-pill">
+          <i class="fa-solid fa-mountain"></i>
+          <span>5 Active Sites</span>
+        </div>
+        <div class="hero-stat-pill">
+          <i class="fa-solid fa-gem"></i>
+          <span>Up to 10% Cu</span>
+        </div>
+        <div class="hero-stat-pill">
+          <i class="fa-solid fa-certificate"></i>
+          <span>SGS Verified</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -96,111 +115,267 @@
   <!-- Mine Cards -->
   <section class="section section-dark" id="mines">
     <div class="container">
-      <!-- Mine 1 -->
-      <div class="mine-detail-card mb-5 fade-up">
-        <div class="row g-4 align-items-center">
+      <!-- Section Intro -->
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-title">Our Mining Sites</h2>
+        <p class="section-subtitle mx-auto">Detailed overview of each mining site including geological data, production metrics, and development status.</p>
+      </div>
+
+      <!-- Mine 1 - Flagship -->
+      <div class="mine-showcase-card mb-5 fade-up" id="mine1">
+        <div class="mine-showcase-ribbon">
+          <i class="fa-solid fa-star"></i> Flagship Site
+        </div>
+        <div class="row g-0">
           <div class="col-lg-5">
-            <div class="mine-visual" style="background: linear-gradient(135deg, #B87333 0%, #8B4513 100%); aspect-ratio: 4/3; border-radius: var(--radius-lg); overflow: hidden;">
-              <img src="assets/images/mines/site1/site1-1.jpg" alt="Mine 1 - Degan, Darwazgai" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-mountain\' style=\'font-size: 5rem; color: rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; height: 100%;\'></i>';">
+            <div class="mine-showcase-image">
+              <img src="assets/images/mines/site1/site1-1.jpg" alt="Mine 1 - Degan, Darwazgai" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="mine-showcase-fallback" style="display: none;">
+                <i class="fa-solid fa-mountain"></i>
+              </div>
+              <div class="mine-showcase-overlay"></div>
+              <div class="mine-showcase-status active">
+                <i class="fa-solid fa-circle-play"></i> Active Production
+              </div>
             </div>
           </div>
           <div class="col-lg-7">
-            <span class="badge bg-success mb-2">Active Production</span>
-            <h3 class="mb-2" data-i18n="projects.mines.mine1.name">Mine 1 - Degan, Darwazgai</h3>
-            <p class="text-secondary mb-4" data-i18n="projects.mines.mine1.description">
-              Our flagship mining site with proven high-grade copper deposits. Active production with semi-mechanized operations and experienced local workforce.
-            </p>
-            <div class="row g-3">
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-value">1,096.35 acres</span></div>
+            <div class="mine-showcase-body">
+              <div class="mine-showcase-header">
+                <span class="mine-number">01</span>
+                <div>
+                  <h3 data-i18n="projects.mines.mine1.name">Degan, Darwazgai</h3>
+                  <span class="mine-location"><i class="fa-solid fa-location-dot"></i> North Waziristan, Pakistan</span>
+                </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Grade</span><span class="spec-value">0.5-10% Cu</span></div>
+              <p class="mine-showcase-desc" data-i18n="projects.mines.mine1.description">
+                Our flagship mining site with SGS-verified high-grade copper deposits. Features active semi-mechanized operations with an experienced local workforce and proven production track record. This site represents the core of our current operations.
+              </p>
+              <div class="mine-showcase-specs">
+                <div class="mine-spec-box">
+                  <i class="fa-solid fa-expand"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">1,096.35</span>
+                    <span class="mine-spec-label">Acres</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box highlight">
+                  <i class="fa-solid fa-gem"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">0.5-10%</span>
+                    <span class="mine-spec-label">Cu Grade</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">10-30</span>
+                    <span class="mine-spec-label">Tons/Day</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">1,500</span>
+                    <span class="mine-spec-label">Tons Produced</span>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Output</span><span class="spec-value">10-30 t/day</span></div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">History</span><span class="spec-value">1,500 tons</span></div>
+              <div class="mine-showcase-features">
+                <span class="mine-feature"><i class="fa-solid fa-certificate"></i> SGS Certified</span>
+                <span class="mine-feature"><i class="fa-solid fa-file-contract"></i> Prospecting License</span>
+                <span class="mine-feature"><i class="fa-solid fa-users"></i> 50+ Local Workers</span>
+                <span class="mine-feature"><i class="fa-solid fa-tools"></i> Semi-Mechanized</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Mine 4 -->
-      <div class="mine-detail-card mb-5 fade-up stagger-1">
-        <div class="row g-4 align-items-center">
+      <!-- Mine 4 - Most Productive -->
+      <div class="mine-showcase-card mb-5 fade-up stagger-1" id="mine4">
+        <div class="mine-showcase-ribbon productive">
+          <i class="fa-solid fa-crown"></i> Most Productive
+        </div>
+        <div class="row g-0">
           <div class="col-lg-5 order-lg-2">
-            <div class="mine-visual" style="background: linear-gradient(135deg, #CD853F 0%, #B87333 100%); aspect-ratio: 4/3; border-radius: var(--radius-lg); overflow: hidden;">
-              <img src="assets/images/mines/site4/panorama.jpg" alt="Mine 4 - Most Productive Site" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-gem\' style=\'font-size: 5rem; color: rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; height: 100%;\'></i>';">
+            <div class="mine-showcase-image">
+              <img src="assets/images/mines/site4/panorama.jpg" alt="Mine 4 - Most Productive Site" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="mine-showcase-fallback" style="display: none;">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <div class="mine-showcase-overlay"></div>
+              <div class="mine-showcase-status productive">
+                <i class="fa-solid fa-bolt"></i> Peak Production
+              </div>
             </div>
           </div>
           <div class="col-lg-7 order-lg-1">
-            <span class="badge bg-warning text-dark mb-2">Most Productive</span>
-            <h3 class="mb-2" data-i18n="projects.mines.mine4.name">Mine 4 - North Waziristan</h3>
-            <p class="text-secondary mb-4" data-i18n="projects.mines.mine4.description">
-              Our most productive site with highest daily output. Village agreement ensures strong community support.
-            </p>
-            <div class="row g-3">
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-value">600 acres</span></div>
+            <div class="mine-showcase-body">
+              <div class="mine-showcase-header">
+                <span class="mine-number">04</span>
+                <div>
+                  <h3 data-i18n="projects.mines.mine4.name">North Waziristan Site</h3>
+                  <span class="mine-location"><i class="fa-solid fa-location-dot"></i> North Waziristan, Pakistan</span>
+                </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Grade</span><span class="spec-value">0.5-8% Cu</span></div>
+              <p class="mine-showcase-desc" data-i18n="projects.mines.mine4.description">
+                Our highest-output mine with exceptional daily production rates. Secured village agreement ensures strong community support and stable operations. This site has delivered 3,000 tons of copper ore to flotation processing partners.
+              </p>
+              <div class="mine-showcase-specs">
+                <div class="mine-spec-box">
+                  <i class="fa-solid fa-expand"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">600</span>
+                    <span class="mine-spec-label">Acres</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box">
+                  <i class="fa-solid fa-gem"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">0.5-8%</span>
+                    <span class="mine-spec-label">Cu Grade</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box highlight">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">30-50</span>
+                    <span class="mine-spec-label">Tons/Day</span>
+                  </div>
+                </div>
+                <div class="mine-spec-box highlight">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <div class="mine-spec-content">
+                    <span class="mine-spec-value">3,000</span>
+                    <span class="mine-spec-label">Tons Produced</span>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">Output</span><span class="spec-value">30-50 t/day</span></div>
-              </div>
-              <div class="col-6 col-md-3">
-                <div class="spec-item"><span class="spec-label">History</span><span class="spec-value">3,000 tons</span></div>
+              <div class="mine-showcase-features">
+                <span class="mine-feature gold"><i class="fa-solid fa-award"></i> Top Producer</span>
+                <span class="mine-feature"><i class="fa-solid fa-handshake"></i> Village Agreement</span>
+                <span class="mine-feature"><i class="fa-solid fa-industry"></i> Flotation Ready</span>
+                <span class="mine-feature"><i class="fa-solid fa-calendar-check"></i> Year-Round Ops</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Other Mines Grid -->
+      <!-- Other Mines - Enhanced Grid -->
       <div class="row g-4">
         <!-- Mine 2 -->
-        <div class="col-md-4 fade-up stagger-2">
-          <div class="card-ziyo p-4 h-100">
-            <span class="badge bg-success mb-2">Active</span>
-            <h4 class="mb-2">Mine 2 - Boyya Kalay</h4>
-            <p class="text-secondary small mb-3">Strategic location with excellent ore grades and expansion potential.</p>
-            <ul class="list-unstyled small text-secondary">
-              <li><i class="fa-solid fa-map text-copper me-2"></i>400.16 acres</li>
-              <li><i class="fa-solid fa-gem text-copper me-2"></i>0.5-10% Cu</li>
-              <li><i class="fa-solid fa-truck text-copper me-2"></i>10-30 t/day</li>
-            </ul>
+        <div class="col-md-4 fade-up stagger-2" id="mine2">
+          <div class="mine-grid-card">
+            <div class="mine-grid-image">
+              <img src="assets/images/mines/site2/site2.jpg" alt="Mine 2 - Boyya Kalay" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="mine-grid-fallback" style="display: none;">
+                <i class="fa-solid fa-mountain"></i>
+              </div>
+              <div class="mine-grid-overlay"></div>
+              <span class="mine-grid-badge active"><i class="fa-solid fa-circle-check"></i> Active</span>
+              <span class="mine-grid-number">02</span>
+            </div>
+            <div class="mine-grid-body">
+              <h4>Boyya Kalay</h4>
+              <span class="mine-grid-location"><i class="fa-solid fa-location-dot"></i> North Waziristan</span>
+              <p>Strategic location with excellent ore grades and significant expansion potential for future scaling.</p>
+              <div class="mine-grid-specs">
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-expand"></i>
+                  <span>400.16 acres</span>
+                </div>
+                <div class="mine-grid-spec highlight">
+                  <i class="fa-solid fa-gem"></i>
+                  <span>0.5-10% Cu</span>
+                </div>
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-truck"></i>
+                  <span>10-30 t/day</span>
+                </div>
+              </div>
+              <div class="mine-grid-tags">
+                <span><i class="fa-solid fa-file-contract"></i> Licensed</span>
+                <span><i class="fa-solid fa-cogs"></i> Operational</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Mine 3 -->
-        <div class="col-md-4 fade-up stagger-3">
-          <div class="card-ziyo p-4 h-100">
-            <span class="badge bg-secondary mb-2">Early Stage</span>
-            <h4 class="mb-2">Mine 3</h4>
-            <p class="text-secondary small mb-3">Early-stage development with confirmed copper presence.</p>
-            <ul class="list-unstyled small text-secondary">
-              <li><i class="fa-solid fa-map text-copper me-2"></i>497.12 acres</li>
-              <li><i class="fa-solid fa-gem text-copper me-2"></i>0.5-10% Cu</li>
-              <li><i class="fa-solid fa-clock text-copper me-2"></i>Development phase</li>
-            </ul>
+        <div class="col-md-4 fade-up stagger-3" id="mine3">
+          <div class="mine-grid-card">
+            <div class="mine-grid-image">
+              <img src="assets/images/mines/site3/copper-oxide-exposed.jpg" alt="Mine 3 - Copper Oxide" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="mine-grid-fallback" style="display: none;">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <div class="mine-grid-overlay"></div>
+              <span class="mine-grid-badge development"><i class="fa-solid fa-seedling"></i> Development</span>
+              <span class="mine-grid-number">03</span>
+            </div>
+            <div class="mine-grid-body">
+              <h4>Copper Oxide Site</h4>
+              <span class="mine-grid-location"><i class="fa-solid fa-location-dot"></i> North Waziristan</span>
+              <p>Early-stage development with confirmed copper oxide presence and excellent high-grade surface deposits.</p>
+              <div class="mine-grid-specs">
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-expand"></i>
+                  <span>497.12 acres</span>
+                </div>
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-gem"></i>
+                  <span>0.5-10% Cu</span>
+                </div>
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>In Development</span>
+                </div>
+              </div>
+              <div class="mine-grid-tags">
+                <span><i class="fa-solid fa-cubes"></i> Oxide Ore</span>
+                <span><i class="fa-solid fa-arrow-trend-up"></i> High Potential</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Mine 5 -->
-        <div class="col-md-4 fade-up stagger-4">
-          <div class="card-ziyo p-4 h-100">
-            <span class="badge bg-info mb-2">High Grade</span>
-            <h4 class="mb-2">Mine 5</h4>
-            <p class="text-secondary small mb-3">High-grade copper oxide deposits confirmed through surface sampling.</p>
-            <ul class="list-unstyled small text-secondary">
-              <li><i class="fa-solid fa-map text-copper me-2"></i>485 acres</li>
-              <li><i class="fa-solid fa-gem text-copper me-2"></i>6-8% Cu</li>
-              <li><i class="fa-solid fa-flask text-copper me-2"></i>Surface confirmed</li>
-            </ul>
+        <div class="col-md-4 fade-up stagger-4" id="mine5">
+          <div class="mine-grid-card">
+            <div class="mine-grid-image">
+              <img src="assets/images/mines/site5/site5.jpg" alt="Mine 5 - High Grade Copper" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="mine-grid-fallback" style="display: none;">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <div class="mine-grid-overlay"></div>
+              <span class="mine-grid-badge high-grade"><i class="fa-solid fa-star"></i> High Grade</span>
+              <span class="mine-grid-number">05</span>
+            </div>
+            <div class="mine-grid-body">
+              <h4>High Grade Site</h4>
+              <span class="mine-grid-location"><i class="fa-solid fa-location-dot"></i> North Waziristan</span>
+              <p>Exceptional high-grade copper oxide deposits confirmed through extensive surface sampling and testing.</p>
+              <div class="mine-grid-specs">
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-expand"></i>
+                  <span>485 acres</span>
+                </div>
+                <div class="mine-grid-spec highlight gold">
+                  <i class="fa-solid fa-gem"></i>
+                  <span>6-8% Cu</span>
+                </div>
+                <div class="mine-grid-spec">
+                  <i class="fa-solid fa-flask"></i>
+                  <span>Surface Verified</span>
+                </div>
+              </div>
+              <div class="mine-grid-tags">
+                <span class="gold"><i class="fa-solid fa-medal"></i> Premium Grade</span>
+                <span><i class="fa-solid fa-vial"></i> Tested</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -210,59 +385,213 @@
   <!-- Technical Specs -->
   <section class="section" id="specs">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6 fade-up">
-          <h2 class="section-title" data-i18n="projects.specs.title">Technical Specifications</h2>
-          <div class="table-responsive">
-            <table class="table table-dark table-striped">
-              <tbody>
-                <tr>
-                  <td data-i18n="projects.specs.ore_type">Ore Type</td>
-                  <td data-i18n="projects.specs.ore_type_value">Copper-bearing sulfide and oxide ores</td>
-                </tr>
-                <tr>
-                  <td data-i18n="projects.specs.grade_range">Grade Range</td>
-                  <td data-i18n="projects.specs.grade_range_value">0.5% - 10% Cu</td>
-                </tr>
-                <tr>
-                  <td data-i18n="projects.specs.associated">Associated Minerals</td>
-                  <td data-i18n="projects.specs.associated_value">Zinc, Silver, Gold, Cobalt, Nickel</td>
-                </tr>
-                <tr>
-                  <td data-i18n="projects.specs.depth">Deposit Depth</td>
-                  <td data-i18n="projects.specs.depth_value">Surface to shallow deposits</td>
-                </tr>
-                <tr>
-                  <td data-i18n="projects.specs.method">Mining Method</td>
-                  <td data-i18n="projects.specs.method_value">Open pit, manual/semi-mechanized</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="col-lg-6 fade-up stagger-1">
-          <div class="card-ziyo p-4">
-            <h4 class="mb-3" data-i18n="projects.sgs.title">SGS Quality Certification</h4>
-            <p class="text-secondary small mb-3" data-i18n="projects.sgs.subtitle">Independent testing confirms exceptional ore quality</p>
-            <div class="row g-3">
-              <div class="col-6">
-                <div class="metric-card">
-                  <div class="metric-card-value" style="font-size: 1.5rem;">4.71-8.91%</div>
-                  <div class="metric-card-label">High-grade Cu</div>
-                </div>
+      <!-- Section Header -->
+      <div class="text-center mb-5 fade-up">
+        <span class="badge bg-copper-subtle text-copper mb-3" data-i18n="projects.specs.badge">Geological Data</span>
+        <h2 class="section-title" data-i18n="projects.specs.title">Technical Specifications</h2>
+        <p class="section-subtitle mx-auto" data-i18n="projects.specs.subtitle">Comprehensive geological and operational data from our mining sites</p>
+      </div>
+
+      <!-- Ore Types Visual -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 fade-up">
+          <div class="ore-type-card">
+            <div class="ore-type-visual">
+              <img src="assets/images/operations/copper-sulphide-sample.jpg" alt="Copper Sulfide Ore" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="ore-type-fallback" style="display: none;">
+                <i class="fa-solid fa-gem"></i>
               </div>
-              <div class="col-6">
-                <div class="metric-card">
-                  <div class="metric-card-value" style="font-size: 1.5rem;">15-20%</div>
-                  <div class="metric-card-label">Concentrate Target</div>
+              <div class="ore-type-badge" data-i18n="projects.specs.ore_types.primary">Primary</div>
+            </div>
+            <div class="ore-type-content">
+              <h4><i class="fa-solid fa-cube text-copper me-2"></i><span data-i18n="projects.specs.ore_types.sulfide.name">Sulfide Ore (CuFeS₂)</span></h4>
+              <p class="text-secondary mb-3" data-i18n="projects.specs.ore_types.sulfide.description">Primary copper ore containing chalcopyrite. Requires flotation processing for concentration.</p>
+              <div class="ore-specs-grid">
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.grade_range">Grade Range</span>
+                  <span class="ore-spec-value">0.5% - 10% Cu</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.sulfur_content">Sulfur Content</span>
+                  <span class="ore-spec-value">17.51% S</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.iron_content">Iron Content</span>
+                  <span class="ore-spec-value">12.32% Fe</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.recovery_rate">Recovery Rate</span>
+                  <span class="ore-spec-value">85-90%</span>
                 </div>
               </div>
             </div>
-            <ul class="list-unstyled small text-secondary mt-3 mb-0">
-              <li><i class="fa-solid fa-check text-copper me-2"></i>Fe: 12.32% - Iron content</li>
-              <li><i class="fa-solid fa-check text-copper me-2"></i>S: 17.51% - Sulfur (sulfide ore)</li>
-              <li><i class="fa-solid fa-check text-copper me-2"></i>Gold & silver traces confirmed</li>
+          </div>
+        </div>
+        <div class="col-md-6 fade-up stagger-1">
+          <div class="ore-type-card">
+            <div class="ore-type-visual">
+              <img src="assets/images/operations/copper-oxide-stock.jpg" alt="Copper Oxide Ore" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="ore-type-fallback" style="display: none;">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <div class="ore-type-badge secondary" data-i18n="projects.specs.ore_types.secondary">Secondary</div>
+            </div>
+            <div class="ore-type-content">
+              <h4><i class="fa-solid fa-cubes text-success me-2"></i><span data-i18n="projects.specs.ore_types.oxide.name">Oxide Ore (CuO/Cu₂O)</span></h4>
+              <p class="text-secondary mb-3" data-i18n="projects.specs.ore_types.oxide.description">Secondary copper ore from weathered deposits. Can be processed via heap leaching or direct smelting.</p>
+              <div class="ore-specs-grid">
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.grade_range">Grade Range</span>
+                  <span class="ore-spec-value">6% - 8% Cu</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.deposit_type">Deposit Type</span>
+                  <span class="ore-spec-value" data-i18n="projects.specs.ore_types.surface">Surface</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.processing">Processing</span>
+                  <span class="ore-spec-value" data-i18n="projects.specs.ore_types.direct_leach">Direct/Leach</span>
+                </div>
+                <div class="ore-spec">
+                  <span class="ore-spec-label" data-i18n="projects.specs.ore_types.recovery_rate">Recovery Rate</span>
+                  <span class="ore-spec-value">80-85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Specs Row -->
+      <div class="row g-4 mb-5">
+        <!-- Mining Method -->
+        <div class="col-lg-4 fade-up stagger-2">
+          <div class="spec-detail-card h-100">
+            <div class="spec-detail-icon">
+              <i class="fa-solid fa-helmet-safety"></i>
+            </div>
+            <h5 data-i18n="projects.specs.mining_method.title">Mining Method</h5>
+            <p class="text-secondary small mb-3" data-i18n="projects.specs.mining_method.description">Open-pit extraction with semi-mechanized operations</p>
+            <ul class="spec-detail-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.mining_method.item1">Surface to shallow depth mining</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.mining_method.item2">Manual & excavator extraction</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.mining_method.item3">Low stripping ratio (1:3)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.mining_method.item4">Year-round operations capable</span></li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Associated Minerals -->
+        <div class="col-lg-4 fade-up stagger-3">
+          <div class="spec-detail-card h-100">
+            <div class="spec-detail-icon secondary">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <h5 data-i18n="projects.specs.associated_minerals.title">Associated Minerals</h5>
+            <p class="text-secondary small mb-3" data-i18n="projects.specs.associated_minerals.description">Valuable by-products enhance overall project economics</p>
+            <div class="mineral-tags">
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #C0C0C0;"></i> <span data-i18n="projects.specs.associated_minerals.silver">Silver (Ag)</span></span>
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #FFD700;"></i> <span data-i18n="projects.specs.associated_minerals.gold">Gold (Au)</span></span>
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #7D7D7D;"></i> <span data-i18n="projects.specs.associated_minerals.zinc">Zinc (Zn)</span></span>
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #0047AB;"></i> <span data-i18n="projects.specs.associated_minerals.cobalt">Cobalt (Co)</span></span>
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #727472;"></i> <span data-i18n="projects.specs.associated_minerals.nickel">Nickel (Ni)</span></span>
+              <span class="mineral-tag"><i class="fa-solid fa-circle" style="color: #4A4A4A;"></i> <span data-i18n="projects.specs.associated_minerals.lead">Lead (Pb)</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Geology -->
+        <div class="col-lg-4 fade-up stagger-4">
+          <div class="spec-detail-card h-100">
+            <div class="spec-detail-icon tertiary">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h5 data-i18n="projects.specs.geological.title">Geological Formation</h5>
+            <p class="text-secondary small mb-3" data-i18n="projects.specs.geological.description">Sediment-hosted copper deposits in metamorphic terrain</p>
+            <ul class="spec-detail-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.geological.item1">Precambrian basement rock</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.geological.item2">Vein-type mineralization</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.geological.item3">Multiple ore horizons</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="projects.specs.geological.item4">Extensive strike length</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SGS Certification Section -->
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5 fade-up">
+          <div class="sgs-image-container">
+            <img src="assets/images/operations/sgs-team.jpg" alt="SGS Pakistan Inspection Team" class="sgs-main-image" onerror="this.src='assets/images/operations/sgs-inspection-500tons.jpg';">
+            <div class="sgs-badge-overlay">
+              <img src="https://www.sgs.com/-/media/sgscorp/images/header/sgs-logo-mobile.svg" alt="SGS Logo" class="sgs-logo" onerror="this.outerHTML='<span class=\'sgs-logo-text\'>SGS</span>';">
+              <span data-i18n="projects.specs.sgs.certified_quality">Certified Quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 fade-up stagger-1">
+          <div class="sgs-content">
+            <span class="badge bg-success mb-3"><i class="fa-solid fa-certificate me-1"></i> <span data-i18n="projects.specs.sgs.verified_by">Verified by SGS Pakistan</span></span>
+            <h3 class="mb-3" data-i18n="projects.sgs.title">SGS Quality Certification</h3>
+            <p class="text-secondary mb-4" data-i18n="projects.specs.sgs.description">Independent laboratory testing by SGS Pakistan confirms exceptional ore quality across all mining sites. Results validated through rigorous sampling protocols.</p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-6 col-md-3">
+                <div class="sgs-metric">
+                  <div class="sgs-metric-value">4.71%</div>
+                  <div class="sgs-metric-label" data-i18n="projects.specs.sgs.min_grade">Min Cu Grade</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="sgs-metric highlight">
+                  <div class="sgs-metric-value">8.91%</div>
+                  <div class="sgs-metric-label" data-i18n="projects.specs.sgs.max_grade">Max Cu Grade</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="sgs-metric">
+                  <div class="sgs-metric-value">15-20%</div>
+                  <div class="sgs-metric-label" data-i18n="projects.sgs.concentrate">Concentrate</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="sgs-metric">
+                  <div class="sgs-metric-value">500+</div>
+                  <div class="sgs-metric-label" data-i18n="projects.specs.sgs.tons_tested">Tons Tested</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sgs-analysis-grid">
+              <div class="sgs-analysis-item">
+                <i class="fa-solid fa-flask text-copper"></i>
+                <div>
+                  <strong>Cu: 4.71% - 8.91%</strong>
+                  <span data-i18n="projects.specs.sgs.copper_content">Copper content (high grade)</span>
+                </div>
+              </div>
+              <div class="sgs-analysis-item">
+                <i class="fa-solid fa-atom text-warning"></i>
+                <div>
+                  <strong>Fe: 12.32%</strong>
+                  <span data-i18n="projects.specs.sgs.iron_content">Iron content (sulfide ore)</span>
+                </div>
+              </div>
+              <div class="sgs-analysis-item">
+                <i class="fa-solid fa-fire text-danger"></i>
+                <div>
+                  <strong>S: 17.51%</strong>
+                  <span data-i18n="projects.specs.sgs.sulfur_content">Sulfur (flotation suitable)</span>
+                </div>
+              </div>
+              <div class="sgs-analysis-item">
+                <i class="fa-solid fa-coins text-success"></i>
+                <div>
+                  <strong>Au/Ag: Traces</strong>
+                  <span data-i18n="projects.specs.sgs.precious_metals">Precious metals confirmed</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -315,7 +644,7 @@
             <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
             <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
             <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
-            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+            <li><a href="team.html" data-i18n="navigation.team">Our Team</a></li>
           </ul>
         </div>
 
@@ -323,10 +652,10 @@
         <div class="col-lg-2 col-md-6">
           <h6 class="footer-title">Company</h6>
           <ul class="footer-links">
-            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="about.html" data-i18n="navigation.about">About Us</a></li>
             <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about.html#timeline">Our History</a></li>
+            <li><a href="investment.html">Invest</a></li>
           </ul>
         </div>
 
@@ -373,17 +702,855 @@
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/forms.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/optimization.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
 
   <style>
-    .hero-page { min-height: 60vh; }
-    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
+    /* Hero page - bright theme with subtle copper accent */
+    .hero-page {
+      min-height: 60vh;
+      background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-primary) 50%, var(--bg-secondary) 100%);
+    }
+    .hero-page .hero-title { color: var(--text-primary); }
+    .hero-page .hero-subtitle { color: var(--text-secondary); }
+    .hero-page .badge { background-color: var(--copper-subtle) !important; color: var(--copper-gold) !important; }
+    .bg-copper-subtle { background-color: rgba(160, 82, 45, 0.12); }
     .text-copper { color: var(--copper-gold) !important; }
-    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
-    .mine-detail-card { background: var(--dark-card); border-radius: var(--radius-lg); padding: var(--space-xl); border: 1px solid var(--dark-border); }
+    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 800; }
     .spec-item { display: flex; flex-direction: column; }
     .spec-label { font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
     .spec-value { font-size: var(--text-lg); font-weight: 600; color: var(--text-primary); }
-    .table-dark { --bs-table-bg: var(--dark-card); --bs-table-striped-bg: var(--dark-tertiary); }
+    .table-dark { --bs-table-bg: var(--bg-tertiary); --bs-table-color: var(--text-primary); --bs-table-striped-bg: #F0F2F5; }
+
+    /* ============================================
+       HERO STATS PILLS
+       ============================================ */
+    .hero-stats-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: var(--space-xl);
+    }
+    .hero-stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--copper-subtle);
+      border: 1px solid rgba(184, 115, 51, 0.2);
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      color: var(--text-primary);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .hero-stat-pill:hover {
+      background: rgba(184, 115, 51, 0.2);
+      border-color: var(--copper-gold);
+      transform: translateY(-2px);
+    }
+    .hero-stat-pill i {
+      color: var(--copper-gold);
+    }
+
+    /* ============================================
+       MINE SHOWCASE CARDS (Featured Mines)
+       ============================================ */
+    .mine-showcase-card {
+      position: relative;
+      background: var(--bg-primary);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-md);
+      transition: all 0.4s ease;
+    }
+    .mine-showcase-card:hover {
+      box-shadow: var(--shadow-xl);
+      border-color: var(--copper-gold);
+      transform: translateY(-4px);
+    }
+    .mine-showcase-ribbon {
+      position: absolute;
+      top: 20px;
+      left: -45px;
+      background: var(--copper-gradient);
+      color: #FFFFFF;
+      padding: 8px 50px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transform: rotate(-45deg);
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .mine-showcase-ribbon.productive {
+      background: linear-gradient(135deg, #DAA520 0%, #FFD700 100%);
+      color: #1A1A2E;
+    }
+    .mine-showcase-image {
+      position: relative;
+      height: 100%;
+      min-height: 350px;
+      overflow: hidden;
+    }
+    .mine-showcase-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .mine-showcase-card:hover .mine-showcase-image img {
+      transform: scale(1.05);
+    }
+    .mine-showcase-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent 0%, rgba(26, 26, 46, 0.3) 100%);
+    }
+    .mine-showcase-fallback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-height: 350px;
+      background: linear-gradient(135deg, #B87333 0%, #8B4513 100%);
+      font-size: 5rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+    .mine-showcase-status {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 600;
+      z-index: 5;
+    }
+    .mine-showcase-status.active {
+      background: linear-gradient(135deg, #228B22 0%, #2E8B57 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(34, 139, 34, 0.4);
+    }
+    .mine-showcase-status.productive {
+      background: linear-gradient(135deg, #DAA520 0%, #FFD700 100%);
+      color: #1A1A2E;
+      box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    }
+    .mine-showcase-body {
+      padding: var(--space-2xl);
+    }
+    .mine-showcase-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: var(--space-lg);
+    }
+    .mine-number {
+      font-size: 56px;
+      font-weight: 800;
+      background: var(--copper-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.25;
+      line-height: 1;
+    }
+    .mine-showcase-header h3 {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 4px 0;
+    }
+    .mine-location {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+    }
+    .mine-location i {
+      color: var(--copper-gold);
+      margin-right: 4px;
+    }
+    .mine-showcase-desc {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+    .mine-showcase-specs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+    .mine-spec-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .mine-spec-box:hover {
+      border-color: var(--border-light);
+      background: var(--bg-secondary);
+    }
+    .mine-spec-box.highlight {
+      background: rgba(160, 82, 45, 0.1);
+      border: 1px solid rgba(160, 82, 45, 0.2);
+    }
+    .mine-spec-box i {
+      font-size: 20px;
+      color: var(--copper-gold);
+      width: 24px;
+      text-align: center;
+    }
+    .mine-spec-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .mine-spec-value {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+    .mine-spec-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .mine-showcase-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .mine-feature {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .mine-feature:hover {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+    .mine-feature i {
+      font-size: 11px;
+      color: var(--copper-gold);
+    }
+    .mine-feature.gold {
+      background: rgba(218, 165, 32, 0.15);
+      color: #DAA520;
+    }
+    .mine-feature.gold i {
+      color: #DAA520;
+    }
+
+    /* ============================================
+       MINE GRID CARDS (Secondary Mines)
+       ============================================ */
+    .mine-grid-card {
+      background: var(--bg-primary);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s ease;
+    }
+    .mine-grid-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--copper-gold);
+    }
+    .mine-grid-image {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+    .mine-grid-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .mine-grid-card:hover .mine-grid-image img {
+      transform: scale(1.1);
+    }
+    .mine-grid-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(26, 26, 46, 0.7) 100%);
+    }
+    .mine-grid-fallback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: linear-gradient(135deg, #B87333 0%, #8B4513 100%);
+      font-size: 3rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    .mine-grid-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .mine-grid-badge.active {
+      background: linear-gradient(135deg, #228B22, #2E8B57);
+      color: #FFFFFF;
+    }
+    .mine-grid-badge.development {
+      background: linear-gradient(135deg, #718096, #4A5568);
+      color: #FFFFFF;
+    }
+    .mine-grid-badge.high-grade {
+      background: linear-gradient(135deg, #0066CC, #0099FF);
+      color: #FFFFFF;
+    }
+    .mine-grid-number {
+      position: absolute;
+      bottom: 12px;
+      left: 16px;
+      font-size: 48px;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.15);
+      line-height: 1;
+      z-index: 2;
+    }
+    .mine-grid-body {
+      padding: var(--space-lg);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .mine-grid-body h4 {
+      font-size: var(--text-lg);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 4px 0;
+    }
+    .mine-grid-location {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-bottom: var(--space-sm);
+      display: block;
+    }
+    .mine-grid-location i {
+      color: var(--copper-gold);
+      margin-right: 4px;
+    }
+    .mine-grid-body p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: var(--space-md);
+    }
+    .mine-grid-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: var(--space-md);
+    }
+    .mine-grid-spec {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+    }
+    .mine-grid-spec i {
+      width: 16px;
+      color: var(--copper-gold);
+      font-size: 12px;
+    }
+    .mine-grid-spec.highlight {
+      color: var(--copper-gold);
+      font-weight: 600;
+    }
+    .mine-grid-spec.highlight.gold {
+      color: #DAA520;
+    }
+    .mine-grid-spec.highlight.gold i {
+      color: #DAA520;
+    }
+    .mine-grid-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .mine-grid-tags span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px;
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-full);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .mine-grid-tags span i {
+      font-size: 10px;
+      color: var(--copper-gold);
+    }
+    .mine-grid-tags span.gold {
+      background: rgba(218, 165, 32, 0.15);
+      color: #DAA520;
+    }
+    .mine-grid-tags span.gold i {
+      color: #DAA520;
+    }
+
+    /* Mine Card Image Styles */
+    .mine-card-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .mine-card-image img {
+      transition: transform 0.5s ease, filter 0.3s ease;
+    }
+    .card-ziyo:hover .mine-card-image img {
+      transform: scale(1.08);
+    }
+    .mine-card-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(transparent, rgba(26, 26, 46, 0.8));
+      pointer-events: none;
+    }
+
+    /* Mine Visual (Large Cards) */
+    .mine-visual {
+      position: relative;
+      overflow: hidden;
+    }
+    .mine-visual img {
+      transition: transform 0.6s ease;
+    }
+    .mine-detail-card:hover .mine-visual img {
+      transform: scale(1.05);
+    }
+    .mine-visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 50%, rgba(184, 115, 51, 0.2) 100%);
+      pointer-events: none;
+    }
+
+    /* Ore Type Cards */
+    .ore-type-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .ore-type-card:hover {
+      border-color: var(--copper-gold);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .ore-type-visual {
+      position: relative;
+      height: 200px;
+      background: linear-gradient(135deg, #E5E7EB 0%, #F0F2F5 100%);
+      overflow: hidden;
+    }
+    .ore-type-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .ore-type-card:hover .ore-type-visual img {
+      transform: scale(1.1);
+    }
+    .ore-type-fallback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 4rem;
+      color: rgba(184, 115, 51, 0.4);
+    }
+    .ore-type-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: var(--copper-gradient);
+      color: #FFFFFF;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .ore-type-badge.secondary {
+      background: linear-gradient(135deg, #228B22 0%, #2E8B57 100%);
+      color: #FFFFFF;
+    }
+    .ore-type-content {
+      padding: 25px;
+    }
+    .ore-type-content h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .ore-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .ore-spec {
+      background: var(--bg-tertiary);
+      padding: 12px 15px;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .ore-spec-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .ore-spec-value {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--copper-gold);
+    }
+
+    /* Spec Detail Cards */
+    .spec-detail-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .spec-detail-card:hover {
+      border-color: var(--copper-gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    .spec-detail-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--copper-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 28px;
+      color: #FFFFFF;
+    }
+    .spec-detail-icon.secondary {
+      background: linear-gradient(135deg, #DAA520 0%, #CD853F 100%);
+      color: #FFFFFF;
+    }
+    .spec-detail-icon.tertiary {
+      background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+      color: #FFFFFF;
+    }
+    .spec-detail-card h5 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .spec-detail-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    .spec-detail-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .spec-detail-list li:last-child {
+      border-bottom: none;
+    }
+    .spec-detail-list li i {
+      color: var(--copper-gold);
+      font-size: 12px;
+    }
+
+    /* Mineral Tags */
+    .mineral-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .mineral-tag {
+      background: var(--bg-tertiary);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .mineral-tag:hover {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+    .mineral-tag i {
+      font-size: 8px;
+    }
+
+    /* SGS Section */
+    .sgs-image-container {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .sgs-main-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+    }
+    .sgs-badge-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-md);
+    }
+    .sgs-logo {
+      height: 30px;
+      filter: none;
+    }
+    .sgs-logo-text {
+      font-size: 24px;
+      font-weight: 800;
+      color: #E31937;
+    }
+    .sgs-badge-overlay span {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .sgs-content h3 {
+      color: var(--text-primary);
+    }
+    .sgs-metric {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .sgs-metric:hover {
+      border-color: var(--copper-gold);
+      box-shadow: var(--shadow-md);
+    }
+    .sgs-metric.highlight {
+      border-color: var(--copper-gold);
+      background: rgba(160, 82, 45, 0.08);
+    }
+    .sgs-metric-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--copper-gold);
+      line-height: 1;
+    }
+    .sgs-metric-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 6px;
+    }
+    .sgs-analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .sgs-analysis-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg-tertiary);
+      padding: 15px;
+      border-radius: var(--radius-md);
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .sgs-analysis-item:hover {
+      background: var(--bg-primary);
+      border-color: var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+    .sgs-analysis-item i {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+    }
+    .sgs-analysis-item strong {
+      display: block;
+      font-size: 14px;
+      color: var(--text-primary);
+    }
+    .sgs-analysis-item span {
+      display: block;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 991.98px) {
+      .mine-showcase-specs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .mine-showcase-image {
+        min-height: 280px;
+      }
+      .mine-showcase-body {
+        padding: var(--space-xl);
+      }
+      .hero-stats-pills {
+        gap: 8px;
+      }
+      .hero-stat-pill {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+    }
+    @media (max-width: 768px) {
+      .ore-specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .sgs-analysis-grid {
+        grid-template-columns: 1fr;
+      }
+      .sgs-main-image {
+        height: 250px;
+      }
+      .mine-showcase-ribbon {
+        top: 15px;
+        left: -50px;
+        padding: 6px 50px;
+        font-size: 10px;
+      }
+      .mine-showcase-image {
+        min-height: 220px;
+      }
+      .mine-number {
+        font-size: 40px;
+      }
+      .mine-showcase-header h3 {
+        font-size: var(--text-xl);
+      }
+      .mine-grid-image {
+        height: 160px;
+      }
+      .mine-grid-number {
+        font-size: 36px;
+      }
+      .hero-stats-pills {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero-stat-pill {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .mine-showcase-specs {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-sm);
+      }
+      .mine-spec-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px 8px;
+        gap: 6px;
+      }
+      .mine-showcase-features {
+        justify-content: center;
+      }
+      .mine-showcase-header {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .mine-number {
+        font-size: 32px;
+      }
+    }
   </style>
 </body>
 </html>

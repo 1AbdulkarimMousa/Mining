@@ -699,9 +699,10 @@ Islamabad, Pakistan
 Dr. Syed Waqi Ur Rehman, PhD  
 Founder & Managing Partner
 
-**Email:** waqi.rehman@outlook.com  
+**Email:** ceo@ziyopvt.com
 **Phone (Pakistan):** +92 333 5566 981  
 **Phone (China):** +86 130 2107 8132
+**Website:** www.ziyopvt.com
 
 ---
 
@@ -898,3 +899,157 @@ The second development cycle focused on advanced enhancements, accessibility imp
 ---
 
 *Second development cycle completed January 2026.*
+
+---
+
+## Appendix C: Third Development Cycle (Iterations 101-150)
+
+### Development Summary - Cycle 3
+
+The third development cycle focused on advanced interactive components, data visualization, user engagement features, and GDPR-compliant cookie management.
+
+### Completed Iterations
+
+| Phase | Iterations | Status | Description |
+|-------|------------|--------|-------------|
+| Investment Calculator | 101-110 | Completed | Interactive ROI calculator with real-time projections |
+| Data Visualization | 111-120 | Completed | Charts library (bar, donut, line, gauge) |
+| Carousels & Sliders | 121-130 | Completed | Testimonials, partners, image sliders |
+| Cookie Consent | 131-140 | Completed | GDPR/CCPA compliant cookie management |
+| UI Components | 141-150 | Completed | FAQ accordion, lightbox, social proof, newsletter |
+
+### New Files Created
+
+**JavaScript Files (5):**
+- assets/js/investment-calculator.js - Interactive ROI calculator with real-time LME copper price
+- assets/js/charts.js - Lightweight chart library (BarChart, DonutChart, LineChart, GaugeChart)
+- assets/js/carousel.js - Testimonials, partners logo, and image carousel components
+- assets/js/cookie-consent.js - GDPR compliant cookie consent banner and preferences
+- assets/js/ui-components.js - FAQ accordion, lightbox, scroll progress, social proof, newsletter popup
+
+### New Features Added
+
+1. **Interactive Investment Calculator:**
+   - Real-time LME copper price integration
+   - Adjustable input parameters (excavation costs, processing, recovery rates)
+   - Automatic financial projections
+   - Year 2 ROI and payback period calculations
+   - Year 3+ expansion projections
+   - Visual summary chart
+
+2. **Data Visualization Library (ZiyoCharts):**
+   - BarChart - Animated bar charts with grid lines
+   - DonutChart - Animated donut/pie charts with legends
+   - LineChart - Smooth line charts with area fill
+   - GaugeChart - Semi-circular gauge indicators
+   - All charts are responsive and dark-theme compatible
+
+3. **Carousel Components:**
+   - TestimonialsCarousel - Quote slider with autoplay, dots, arrows
+   - PartnersCarousel - Infinite scrolling logo carousel
+   - ImageSlider - Full-featured image gallery with thumbnails
+   - Touch/swipe support for mobile
+   - Keyboard navigation
+
+4. **Cookie Consent Management:**
+   - GDPR & CCPA compliant
+   - Customizable categories (necessary, analytics, marketing)
+   - Bilingual support (EN/ZH)
+   - Persistent preferences via cookies and localStorage
+   - Manage preferences modal
+   - Cookie policy link
+
+5. **Advanced UI Components:**
+   - FAQAccordion - Animated accordion with search
+   - Lightbox - Full-screen image viewer with zoom
+   - ScrollProgress - Reading progress indicator
+   - SocialProof - Social proof notification popups
+   - NewsletterPopup - Email subscription popup with exit intent
+   - PageTransitions - Smooth page transition effects
+
+### Technical Details
+
+**Cookie Consent Features:**
+- Stores consent in both cookies and localStorage
+- Dispatches events for third-party integrations
+- Supports category-based consent (necessary, analytics, marketing)
+- Bilingual interface with automatic language detection
+
+**Chart Library Features:**
+- Pure JavaScript, no dependencies
+- SVG-based rendering for crisp graphics
+- Smooth animations with CSS transitions
+- Responsive design for all screen sizes
+- Customizable colors and options
+
+**UI Component Features:**
+- Keyboard accessible (Tab, Enter, Escape)
+- Screen reader compatible
+- Touch gesture support
+- Smooth CSS animations
+- Dark theme styling
+
+### Files Modified
+
+All 8 main HTML pages updated with new script includes:
+- index.html
+- about.html
+- projects.html
+- operations.html
+- investment.html
+- team.html
+- sustainability.html
+- contact.html
+
+Plus legal pages:
+- privacy-policy.html
+- terms-of-service.html
+
+### Script Loading Order
+
+```html
+<!-- Core Scripts -->
+<script src="assets/js/language-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/micro-interactions.js"></script>
+<script src="assets/js/mobile-nav.js"></script>
+<script src="assets/js/forms.js"></script>
+<script src="assets/js/accessibility.js"></script>
+
+<!-- New Scripts (Cycle 3) -->
+<script src="assets/js/optimization.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
+<script src="assets/js/ui-components.js"></script>
+```
+
+### Total Project Statistics
+
+**Files Created (All Cycles):**
+- HTML Pages: 10
+- CSS Files: 5
+- JavaScript Files: 15
+- JSON Files: 3
+- PWA Files: 2
+
+**Total Lines of Code:**
+- CSS: ~3,500 lines
+- JavaScript: ~6,000 lines
+- HTML: ~6,000 lines
+
+### Future Enhancements (Cycle 4 potential)
+
+1. Real-time chat widget integration
+2. Video player component with custom controls
+3. Interactive timeline component
+4. Map integration for project locations
+5. Document download center
+6. Multi-step form wizard
+7. Real-time notifications via WebSocket
+8. Advanced search with filters
+
+---
+
+*Third development cycle completed January 2026.*

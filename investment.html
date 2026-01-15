@@ -48,7 +48,7 @@
 
   <!-- Hero -->
   <section class="hero hero-page">
-    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #2d132c 100%);"></div>
+    <div class="hero-background"></div>
     <div class="hero-content">
       <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="investment.hero.badge">Investment</span>
       <h1 class="hero-title fade-up stagger-1" data-i18n="investment.hero.title">Investment Opportunity</h1>
@@ -525,7 +525,7 @@
             <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
             <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
             <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
-            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+            <li><a href="about.html" data-i18n="navigation.about">About Us</a></li>
           </ul>
         </div>
 
@@ -535,8 +535,8 @@
           <ul class="footer-links">
             <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
             <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+            <li><a href="about.html#history">History</a></li>
           </ul>
         </div>
 
@@ -583,138 +583,13 @@
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/forms.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/optimization.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
   <script src="assets/js/investment-calculator.js"></script>
 
-  <style>
-    .hero-page { min-height: 60vh; }
-    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
-    .text-copper { color: var(--copper-gold) !important; }
-    .bg-copper { background: var(--copper-gradient); color: var(--dark-primary); }
-    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
-    .border-copper { border: 2px solid var(--copper-gold) !important; }
-    .table-dark { --bs-table-bg: var(--dark-tertiary); }
-
-    .process-step { background: var(--dark-card); border-radius: var(--radius-lg); padding: var(--space-xl); text-align: center; border: 1px solid var(--dark-border); height: 100%; }
-    .process-step-final { border-color: var(--copper-gold); }
-    .step-number { width: 50px; height: 50px; background: var(--copper-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-xl); font-weight: 800; color: var(--dark-primary); margin: 0 auto var(--space-md); }
-    .process-step h5 { color: var(--text-secondary); font-size: var(--text-sm); font-weight: 500; margin: 0; }
-
-    /* Investment Model Styles */
-    .model-detail-grid { display: grid; gap: var(--space-md); }
-    .model-detail-item { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
-    .model-detail-item .label { color: var(--text-secondary); font-size: var(--text-sm); }
-    .model-detail-item .value { color: var(--text-primary); font-weight: 600; }
-
-    .exploration-breakdown { display: flex; flex-direction: column; gap: var(--space-md); }
-    .exploration-item { display: flex; justify-content: space-between; align-items: start; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
-    .exploration-label { display: flex; align-items: center; gap: var(--space-sm); flex: 1; }
-    .exploration-label i { color: var(--copper-gold); font-size: var(--text-lg); }
-    .exploration-calc { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
-    .exploration-total { display: flex; justify-content: space-between; padding-top: var(--space-md); margin-top: var(--space-sm); border-top: 2px solid var(--copper-gold); font-size: var(--text-lg); }
-
-    .calculation-card { background: var(--dark-tertiary); padding: var(--space-lg); border-radius: var(--radius-md); height: 100%; }
-    .calc-step { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) 0; border-bottom: 1px solid var(--dark-border); }
-    .calc-step:last-child { border-bottom: none; padding-top: var(--space-md); margin-top: var(--space-sm); border-top: 2px solid var(--dark-border); }
-    .calc-step span { color: var(--text-secondary); }
-    .calc-step strong { color: var(--text-primary); }
-
-    /* Interactive Calculator Styles */
-    .calc-input-grid { display: flex; flex-direction: column; gap: var(--space-lg); }
-    .calc-input-group { display: flex; flex-direction: column; gap: var(--space-xs); }
-    .calc-input-group label { color: var(--text-primary); font-weight: 600; font-size: var(--text-sm); }
-    .calc-input {
-      background: var(--dark-tertiary);
-      border: 1px solid var(--dark-border);
-      color: var(--text-primary);
-      padding: var(--space-sm) var(--space-md);
-      border-radius: var(--radius-md);
-      font-size: var(--text-base);
-      transition: all 0.3s ease;
-      width: 100%;
-    }
-    .calc-input:focus {
-      outline: none;
-      border-color: var(--copper-gold);
-      box-shadow: 0 0 0 3px rgba(184, 115, 51, 0.1);
-    }
-    .calc-input:hover { border-color: rgba(184, 115, 51, 0.5); }
-
-    .calc-result-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: var(--space-sm) 0;
-      border-bottom: 1px solid var(--dark-border);
-    }
-    .calc-result-item:last-child { border-bottom: none; }
-    .calc-result-item.highlight {
-      padding-top: var(--space-md);
-      margin-top: var(--space-sm);
-      border-top: 2px solid var(--copper-gold);
-      border-bottom: none;
-    }
-    .calc-result-item .label { color: var(--text-secondary); font-size: var(--text-sm); }
-    .calc-result-item .value { color: var(--text-primary); font-weight: 600; font-size: var(--text-base); }
-
-    /* Simple Chart Styles */
-    .simple-chart { display: flex; flex-direction: column; gap: var(--space-md); }
-    .chart-row { display: flex; align-items: center; gap: var(--space-md); }
-    .chart-label {
-      min-width: 80px;
-      color: var(--text-secondary);
-      font-size: var(--text-sm);
-      font-weight: 600;
-    }
-    .chart-bar-container {
-      flex: 1;
-      height: 32px;
-      background: var(--dark-tertiary);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-    }
-    .chart-bar {
-      height: 100%;
-      border-radius: var(--radius-md);
-      transition: width 0.5s ease;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: var(--space-sm);
-    }
-    .chart-value {
-      min-width: 100px;
-      text-align: right;
-      font-weight: 700;
-      font-size: var(--text-base);
-    }
-
-    /* Toast Notification Styles */
-    .toast-notification {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: var(--dark-card);
-      border: 1px solid var(--copper-gold);
-      padding: var(--space-md) var(--space-lg);
-      border-radius: var(--radius-md);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-      display: flex;
-      align-items: center;
-      gap: var(--space-sm);
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.3s ease;
-      z-index: 9999;
-    }
-    .toast-notification.show { opacity: 1; transform: translateY(0); }
-    .toast-notification i { font-size: var(--text-lg); }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .chart-row { flex-direction: column; align-items: flex-start; gap: var(--space-xs); }
-      .chart-label, .chart-value { min-width: auto; }
-      .chart-bar-container { width: 100%; }
-    }
-  </style>
+  <!-- Inline styles consolidated into main.css v3.0 -->
 </body>
 </html>

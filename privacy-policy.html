@@ -367,20 +367,23 @@
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
 
   <style>
     .content-card {
-      background: var(--dark-card);
+      background: var(--bg-primary);
       border-radius: var(--radius-xl);
       padding: var(--space-2xl);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
     }
     .content-card h2 {
       color: var(--copper-gold);
       margin-top: 2rem;
     }
     .content-card h3 {
-      color: var(--light-secondary);
+      color: var(--text-primary);
     }
     .content-card ul {
       margin-left: 1.5rem;
@@ -388,11 +391,11 @@
     }
     .content-card li {
       margin-bottom: 0.5rem;
-      color: var(--light-tertiary);
+      color: var(--text-secondary);
     }
     .page-header {
       padding: 8rem 0 4rem;
-      background: linear-gradient(135deg, var(--dark-primary) 0%, var(--dark-secondary) 100%);
+      background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-primary) 50%, var(--bg-secondary) 100%);
       position: relative;
       overflow: hidden;
     }
@@ -403,7 +406,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at 50% 50%, rgba(184, 115, 51, 0.1) 0%, transparent 70%);
+      background: radial-gradient(circle at 50% 50%, rgba(184, 115, 51, 0.08) 0%, transparent 70%);
     }
     .brand-icon {
       width: 40px;
@@ -413,7 +416,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--dark-primary);
+      color: #FFFFFF;
       font-weight: 800;
     }
     .btn-back-to-top {

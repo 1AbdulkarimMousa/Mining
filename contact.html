@@ -48,7 +48,7 @@
 
   <!-- Hero -->
   <section class="hero hero-page">
-    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #1F1F1F 100%);"></div>
+    <div class="hero-background"></div>
     <div class="hero-content">
       <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="contact.hero.badge">Contact</span>
       <h1 class="hero-title fade-up stagger-1" data-i18n="contact.hero.title">Get In Touch</h1>
@@ -255,7 +255,7 @@
             <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
             <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
             <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
-            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+            <li><a href="team.html" data-i18n="navigation.team">Our Team</a></li>
           </ul>
         </div>
 
@@ -263,10 +263,10 @@
         <div class="col-lg-2 col-md-6">
           <h6 class="footer-title">Company</h6>
           <ul class="footer-links">
-            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="about.html" data-i18n="navigation.about">About Us</a></li>
             <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about.html#timeline">Our History</a></li>
+            <li><a href="investment.html">Invest</a></li>
           </ul>
         </div>
 
@@ -313,27 +313,12 @@
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/forms.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/optimization.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
 
-  <style>
-    .hero-page { min-height: 50vh; }
-    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
-    .text-copper { color: var(--copper-gold) !important; }
-    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
-
-    .contact-info-card { display: flex; gap: var(--space-lg); align-items: flex-start; }
-    .contact-icon { width: 50px; height: 50px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--dark-primary); flex-shrink: 0; }
-    .contact-details h5 { font-size: var(--text-sm); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-xs); }
-    .contact-details p, .contact-details a { font-size: var(--text-base); color: var(--text-primary); margin: 0; }
-    .contact-details a:hover { color: var(--copper-gold); }
-
-    .social-link { width: 50px; height: 50px; background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: var(--text-secondary); transition: all var(--transition-fast); }
-    .social-link:hover { background: var(--copper-gradient); border-color: transparent; color: var(--dark-primary); }
-
-    .alert-success { background: rgba(80, 200, 120, 0.15); border: 1px solid rgba(80, 200, 120, 0.3); color: #50C878; border-radius: var(--radius-md); }
-
-    .error-message { color: #ef4444; font-size: var(--text-sm); margin-top: var(--space-xs); }
-    .form-control-ziyo.is-invalid { border-color: #ef4444; }
-    .form-control-ziyo.is-valid { border-color: #50C878; }
-  </style>
+  <!-- Inline styles consolidated into main.css v3.0 -->
 </body>
 </html>

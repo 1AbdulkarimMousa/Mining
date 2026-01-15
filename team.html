@@ -48,7 +48,7 @@
 
   <!-- Hero -->
   <section class="hero hero-page">
-    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #1F1F1F 100%);"></div>
+    <div class="hero-background"></div>
     <div class="hero-content">
       <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="team.hero.badge">Leadership</span>
       <h1 class="hero-title fade-up stagger-1" data-i18n="team.hero.title">Our Team</h1>
@@ -321,7 +321,7 @@
             <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
             <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
             <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
-            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+            <li><a href="team.html" data-i18n="navigation.team">Our Team</a></li>
           </ul>
         </div>
 
@@ -329,10 +329,10 @@
         <div class="col-lg-2 col-md-6">
           <h6 class="footer-title">Company</h6>
           <ul class="footer-links">
-            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="about.html" data-i18n="navigation.about">About Us</a></li>
             <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about.html#timeline">Our History</a></li>
+            <li><a href="contact.html">Inquiries</a></li>
           </ul>
         </div>
 
@@ -379,105 +379,12 @@
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/forms.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/optimization.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
 
-  <style>
-    .hero-page { min-height: 50vh; }
-    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
-    .text-copper { color: var(--copper-gold) !important; }
-    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
-
-    .founder-image { position: relative; text-align: center; }
-    .founder-avatar { width: 280px; height: 280px; margin: 0 auto; background: linear-gradient(135deg, var(--dark-card) 0%, var(--dark-tertiary) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 8rem; color: var(--copper-gold); border: 4px solid var(--copper-gold); overflow: hidden; }
-    .founder-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .founder-badge { position: absolute; bottom: 20px; right: 20%; background: var(--dark-card); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); border: 1px solid var(--dark-border); }
-
-    .expertise-tag { background: var(--dark-card); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); font-size: var(--text-sm); color: var(--text-secondary); border: 1px solid var(--dark-border); }
-
-    .experience-list { position: relative; }
-    .experience-list::before { content: ''; position: absolute; left: 120px; top: 0; bottom: 0; width: 2px; background: var(--dark-border); }
-    .experience-item { display: flex; gap: var(--space-xl); padding: var(--space-xl) 0; position: relative; }
-    .experience-item::before { content: ''; position: absolute; left: 112px; top: 50%; width: 18px; height: 18px; background: var(--copper-gradient); border-radius: 50%; transform: translateY(-50%); }
-    .exp-period { width: 100px; text-align: right; color: var(--text-muted); font-size: var(--text-sm); font-weight: 600; flex-shrink: 0; }
-    .exp-content { padding-left: var(--space-xl); }
-    .exp-content h5 { color: var(--text-primary); margin-bottom: var(--space-xs); }
-
-    @media (max-width: 767.98px) {
-      .experience-list::before { left: 10px; }
-      .experience-item::before { left: 2px; }
-      .experience-item { flex-direction: column; gap: var(--space-sm); padding-left: var(--space-2xl); }
-      .exp-period { width: auto; text-align: left; }
-      .exp-content { padding-left: 0; }
-    }
-
-    /* Team Member Cards */
-    .team-member-card {
-      background: var(--dark-card);
-      border-radius: var(--radius-lg);
-      padding: var(--space-xl);
-      text-align: center;
-      border: 1px solid var(--dark-border);
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-    .team-member-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--copper-gold);
-      box-shadow: 0 8px 24px rgba(184, 115, 51, 0.15);
-    }
-    .team-member-avatar {
-      width: 160px;
-      height: 160px;
-      margin: 0 auto var(--space-lg);
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid var(--copper-gold);
-      background: var(--dark-tertiary);
-    }
-    .team-member-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .team-member-info {
-      margin-top: var(--space-md);
-    }
-    .team-member-name {
-      color: var(--text-primary);
-      font-size: var(--text-lg);
-      font-weight: 600;
-      margin-bottom: var(--space-xs);
-    }
-    .team-member-role {
-      color: var(--copper-gold);
-      font-size: var(--text-sm);
-      font-weight: 500;
-      margin: 0;
-    }
-
-    /* Team Group Photo */
-    .team-group-photo {
-      background: var(--dark-card);
-      border: 1px solid var(--dark-border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-    }
-    .team-group-photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .team-group-caption {
-      padding: var(--space-xl);
-      text-align: center;
-    }
-    .team-group-caption h5 {
-      color: var(--text-primary);
-      margin-bottom: var(--space-sm);
-    }
-    .team-group-caption p {
-      color: var(--text-secondary);
-      font-size: var(--text-sm);
-    }
-  </style>
+  <!-- Inline styles consolidated into main.css v3.0 -->
 </body>
 </html>

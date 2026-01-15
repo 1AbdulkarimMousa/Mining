@@ -60,10 +60,88 @@
       "title": "矿业项目",
       "subtitle": "五个战略性铜矿开采点，矿化作用已得到证实，生产能力活跃。",
       "view_all": "查看所有项目",
-      "active": "活跃",
+      "active": "活跃生产",
       "early_stage": "早期阶段",
       "acres": "英亩",
-      "grade": "铜品位"
+      "grade": "铜品位",
+      "portfolio_stats": {
+        "total_acres": "总英亩",
+        "mine_sites": "矿区",
+        "tons_produced": "已生产吨数",
+        "max_cu_grade": "最高铜品位"
+      },
+      "mine1": {
+        "name": "德干，达尔瓦兹盖",
+        "location": "北瓦济里斯坦",
+        "description": "我们的旗舰矿区，拥有SGS验证的高品位铜矿床。采用半机械化作业，当地劳动力经验丰富，生产记录良好。",
+        "specs": {
+          "acres": "英亩",
+          "cu_grade": "铜品位",
+          "tons_day": "吨/天",
+          "tons_produced": "已生产吨数"
+        },
+        "tags": {
+          "sgs_certified": "SGS认证",
+          "licensed": "持证运营",
+          "workers": "50+工人"
+        }
+      },
+      "mine4": {
+        "name": "北瓦济里斯坦矿区",
+        "location": "北瓦济里斯坦",
+        "status": "产量最高",
+        "description": "我们产量最高的矿区，日产量出色。村庄协议确保强大的社区支持和长期稳定运营。",
+        "specs": {
+          "acres": "英亩",
+          "cu_grade": "铜品位",
+          "tons_day": "吨/天",
+          "tons_produced": "已生产吨数"
+        },
+        "tags": {
+          "top_producer": "顶级生产商",
+          "village_agreement": "村庄协议",
+          "flotation_ready": "浮选就绪"
+        }
+      },
+      "mine2": {
+        "name": "博亚卡莱",
+        "status": "活跃",
+        "description": "战略位置，矿石品位优良，扩展潜力巨大。",
+        "specs": {
+          "acres": "400英亩",
+          "cu_grade": "0.5-10%铜",
+          "tons_day": "10-30吨/天"
+        }
+      },
+      "mine3": {
+        "name": "氧化铜矿区",
+        "status": "开发中",
+        "description": "早期开发阶段，铜矿存在已确认，地表矿床品位高。",
+        "specs": {
+          "acres": "497英亩",
+          "cu_grade": "0.5-10%铜",
+          "in_development": "开发中"
+        }
+      },
+      "mine5": {
+        "name": "高品位矿区",
+        "status": "高品位",
+        "description": "通过大量地表取样确认的优质高品位氧化铜矿床。",
+        "specs": {
+          "acres": "485英亩",
+          "cu_grade": "6-8%铜",
+          "surface_verified": "地表已验证"
+        }
+      },
+      "quality_banner": {
+        "title": "独立验证品质",
+        "description": "所有矿石品位均由SGS巴基斯坦验证——全球领先的检验、验证、测试和认证公司。",
+        "min_cu_grade": "最低铜品位",
+        "max_cu_grade": "最高铜品位"
+      },
+      "cta_subtext": "探索详细的地质数据、生产指标和投资机会",
+      "view_details": "查看详情",
+      "learn_more": "了解更多"
     },
     "why_invest": {
       "badge": "投资",
@@ -258,6 +336,8 @@
     },
     "specs": {
       "title": "技术规格",
+      "badge": "地质数据",
+      "subtitle": "来自我们矿区的综合地质和运营数据",
       "ore_type": "矿石类型",
       "ore_type_value": "含铜硫化矿和氧化矿",
       "grade_range": "品位范围",
@@ -267,7 +347,65 @@
       "depth": "矿床深度",
       "depth_value": "地表至浅层矿床",
       "method": "采矿方法",
-      "method_value": "露天开采，人工/半机械化"
+      "method_value": "露天开采，人工/半机械化",
+      "ore_types": {
+        "primary": "主要",
+        "secondary": "次要",
+        "grade_range": "品位范围",
+        "sulfur_content": "硫含量",
+        "iron_content": "铁含量",
+        "recovery_rate": "回收率",
+        "deposit_type": "矿床类型",
+        "processing": "加工方式",
+        "surface": "地表矿",
+        "direct_leach": "直接冶炼/浸出",
+        "sulfide": {
+          "name": "硫化矿 (CuFeS₂)",
+          "description": "主要铜矿石，含黄铜矿。需浮选加工进行选矿。"
+        },
+        "oxide": {
+          "name": "氧化矿 (CuO/Cu₂O)",
+          "description": "来自风化矿床的次生铜矿石。可通过堆浸或直接冶炼加工。"
+        }
+      },
+      "mining_method": {
+        "title": "采矿方法",
+        "description": "露天开采，半机械化作业",
+        "item1": "地表至浅层开采",
+        "item2": "人工与挖掘机开采",
+        "item3": "低剥采比 (1:3)",
+        "item4": "全年可运营"
+      },
+      "associated_minerals": {
+        "title": "伴生矿物",
+        "description": "有价值的副产品增强项目整体经济效益",
+        "silver": "银 (Ag)",
+        "gold": "金 (Au)",
+        "zinc": "锌 (Zn)",
+        "cobalt": "钴 (Co)",
+        "nickel": "镍 (Ni)",
+        "lead": "铅 (Pb)"
+      },
+      "geological": {
+        "title": "地质构造",
+        "description": "变质地形中的沉积型铜矿床",
+        "item1": "前寒武纪基底岩",
+        "item2": "脉状矿化",
+        "item3": "多矿层赋存",
+        "item4": "延伸走向长度大"
+      },
+      "sgs": {
+        "certified_quality": "认证品质",
+        "verified_by": "SGS巴基斯坦验证",
+        "description": "SGS巴基斯坦独立实验室检测确认所有矿区矿石品质优异。结果通过严格的取样协议验证。",
+        "min_grade": "最低铜品位",
+        "max_grade": "最高铜品位",
+        "tons_tested": "检测吨数",
+        "copper_content": "铜含量（高品位）",
+        "iron_content": "铁含量（硫化矿）",
+        "sulfur_content": "硫（适合浮选）",
+        "precious_metals": "已确认含贵金属"
+      }
     },
     "sgs": {
       "title": "SGS质量认证",

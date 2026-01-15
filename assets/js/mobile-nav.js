@@ -1,7 +1,8 @@
 /**
  * Ziyo International - Mobile Navigation
  * Enhanced mobile menu with smooth animations
- * Version: 2.0
+ * Bright Theme Optimized
+ * Version: 3.0
  */
 
 class MobileNavigation {
@@ -26,7 +27,9 @@ class MobileNavigation {
   }
 
   init() {
-    this.toggle = document.querySelector(this.options.toggleSelector);
+    // First try custom toggle, then fallback to Bootstrap toggle
+    this.toggle = document.querySelector(this.options.toggleSelector) ||
+                  document.querySelector('.navbar-toggler-ziyo');
     this.overlay = document.querySelector(this.options.overlaySelector);
     this.nav = document.querySelector(this.options.navSelector);
 
@@ -92,7 +95,12 @@ class MobileNavigation {
     this.overlay.appendChild(content);
     document.body.appendChild(this.overlay);
 
-    // Create toggle button if not exists
+    // Use existing Bootstrap toggle if available, do NOT create a duplicate
+    if (!this.toggle) {
+      this.toggle = document.querySelector('.navbar-toggler-ziyo');
+    }
+
+    // Only create toggle if none exists
     if (!this.toggle) {
       const navbar = document.querySelector('.navbar-ziyo .container');
       if (navbar) {
@@ -373,10 +381,10 @@ class BottomNavigation {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(10, 10, 10, 0.95);
+      background: rgba(255, 255, 255, 0.98);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border-top: 1px solid var(--dark-border);
+      border-top: 1px solid var(--border-light, #E5E7EB);
       display: flex;
       justify-content: space-around;
       padding: 8px 0;
@@ -384,6 +392,7 @@ class BottomNavigation {
       z-index: 1000;
       transform: translateY(0);
       transition: transform 0.3s ease;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
     `;
 
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -400,8 +409,9 @@ class BottomNavigation {
         align-items: center;
         text-decoration: none;
         padding: 8px 16px;
-        color: ${isActive ? 'var(--copper-gold)' : 'var(--text-muted)'};
+        color: ${isActive ? 'var(--copper-gold, #B87333)' : 'var(--text-secondary, #6B7280)'};
         transition: color 0.3s;
+        min-height: 44px;
       `;
 
       link.innerHTML = `

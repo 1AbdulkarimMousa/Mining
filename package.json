@@ -1,0 +1,20 @@
+{
+  "name": "mining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.57.0",
+    "puppeteer": "^24.35.0",
+    "serve": "^14.2.5"
+  }
+}

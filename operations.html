@@ -48,7 +48,7 @@
 
   <!-- Hero -->
   <section class="hero hero-page">
-    <div class="hero-background" style="background: linear-gradient(135deg, #0A0A0A 0%, #16213e 100%);"></div>
+    <div class="hero-background"></div>
     <div class="hero-content">
       <span class="badge bg-copper-subtle text-copper mb-3 fade-up" data-i18n="operations.hero.badge">Operations</span>
       <h1 class="hero-title fade-up stagger-1" data-i18n="operations.hero.title">Operational Excellence</h1>
@@ -383,7 +383,7 @@
             <li><a href="projects.html" data-i18n="navigation.projects">Projects</a></li>
             <li><a href="operations.html" data-i18n="navigation.operations">Operations</a></li>
             <li><a href="investment.html" data-i18n="navigation.investment">Investment</a></li>
-            <li><a href="sustainability.html" data-i18n="navigation.sustainability">Sustainability</a></li>
+            <li><a href="team.html" data-i18n="navigation.team">Our Team</a></li>
           </ul>
         </div>
 
@@ -391,10 +391,10 @@
         <div class="col-lg-2 col-md-6">
           <h6 class="footer-title">Company</h6>
           <ul class="footer-links">
-            <li><a href="team.html" data-i18n="navigation.team">Team</a></li>
+            <li><a href="about.html" data-i18n="navigation.about">About Us</a></li>
             <li><a href="contact.html" data-i18n="navigation.contact">Contact</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about.html#timeline">Our History</a></li>
+            <li><a href="contact.html">Inquiries</a></li>
           </ul>
         </div>
 
@@ -441,236 +441,12 @@
   <script src="assets/js/mobile-nav.js"></script>
   <script src="assets/js/forms.js"></script>
   <script src="assets/js/accessibility.js"></script>
+  <script src="assets/js/optimization.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/cookie-consent.js"></script>
+  <script src="assets/js/ui-components.js"></script>
 
-  <style>
-    .hero-page { min-height: 50vh; }
-    .bg-copper-subtle { background-color: rgba(184, 115, 51, 0.15); }
-    .text-copper { color: var(--copper-gold) !important; }
-    .brand-icon { width: 40px; height: 40px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--dark-primary); font-weight: 800; }
-
-    .spec-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); padding: var(--space-lg); text-align: center; height: 100%; }
-    .spec-icon { width: 50px; height: 50px; background: var(--copper-gradient); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-md); font-size: 1.25rem; color: var(--dark-primary); }
-    .spec-label { font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-    .spec-value { font-size: var(--text-lg); font-weight: 600; color: var(--text-primary); }
-
-    .plant-visual { background: linear-gradient(135deg, var(--dark-card) 0%, var(--dark-tertiary) 100%); border-radius: var(--radius-lg); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; border: 1px solid var(--dark-border); }
-    .plant-icon { font-size: 8rem; color: var(--copper-gold); opacity: 0.5; }
-
-    /* Modern Process Flow */
-    .process-flow-modern { max-width: 800px; margin: 0 auto; }
-
-    .process-stage-card {
-      background: var(--dark-card);
-      border: 2px solid var(--dark-border);
-      border-radius: var(--radius-xl);
-      padding: var(--space-xl);
-      margin-bottom: var(--space-xl);
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    .process-stage-card:hover {
-      border-color: var(--copper-gold);
-      transform: translateX(8px);
-      box-shadow: 0 8px 32px rgba(184, 115, 51, 0.15);
-    }
-
-    .process-stage-card.process-stage-final {
-      border-color: var(--copper-gold);
-      background: linear-gradient(135deg, var(--dark-card) 0%, rgba(184, 115, 51, 0.05) 100%);
-    }
-
-    .stage-badge {
-      position: absolute;
-      top: -18px;
-      left: var(--space-xl);
-      background: var(--copper-gradient);
-      padding: var(--space-xs) var(--space-lg);
-      border-radius: var(--radius-full);
-      box-shadow: 0 4px 12px rgba(184, 115, 51, 0.3);
-    }
-
-    .stage-badge-final {
-      background: linear-gradient(135deg, #B87333 0%, #D4AF37 100%);
-    }
-
-    .stage-number {
-      font-size: var(--text-lg);
-      font-weight: 800;
-      color: var(--dark-primary);
-      letter-spacing: 0.05em;
-    }
-
-    .stage-content { margin-top: var(--space-md); }
-
-    .stage-header {
-      display: flex;
-      align-items: center;
-      gap: var(--space-lg);
-      margin-bottom: var(--space-lg);
-      padding-bottom: var(--space-lg);
-      border-bottom: 1px solid var(--dark-border);
-    }
-
-    .stage-icon-wrapper {
-      width: 64px;
-      height: 64px;
-      background: linear-gradient(135deg, rgba(184, 115, 51, 0.1) 0%, rgba(184, 115, 51, 0.05) 100%);
-      border: 2px solid var(--dark-border);
-      border-radius: var(--radius-lg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-
-    .process-stage-card:hover .stage-icon-wrapper {
-      border-color: var(--copper-gold);
-      background: linear-gradient(135deg, rgba(184, 115, 51, 0.2) 0%, rgba(184, 115, 51, 0.1) 100%);
-      transform: scale(1.05);
-    }
-
-    .stage-icon-wrapper i {
-      font-size: 1.75rem;
-      color: var(--copper-gold);
-    }
-
-    .stage-icon-final {
-      background: linear-gradient(135deg, rgba(184, 115, 51, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
-      border-color: var(--copper-gold);
-    }
-
-    .stage-title {
-      font-size: var(--text-xl);
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: var(--space-xs);
-    }
-
-    .stage-subtitle {
-      font-size: var(--text-sm);
-      color: var(--text-muted);
-      margin: 0;
-    }
-
-    .stage-details {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-md);
-    }
-
-    .detail-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: var(--space-sm) var(--space-md);
-      background: var(--dark-tertiary);
-      border-radius: var(--radius-md);
-      transition: all 0.2s ease;
-    }
-
-    .detail-row:hover {
-      background: rgba(184, 115, 51, 0.08);
-    }
-
-    .detail-label {
-      font-size: var(--text-sm);
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    .detail-value {
-      font-size: var(--text-base);
-      color: var(--text-primary);
-      font-weight: 600;
-    }
-
-    .detail-value.highlight {
-      color: var(--copper-gold);
-      font-weight: 700;
-    }
-
-    .stage-connector {
-      text-align: center;
-      margin: var(--space-lg) 0;
-      position: relative;
-    }
-
-    .stage-connector::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 2px;
-      height: 40px;
-      background: linear-gradient(180deg, var(--dark-border) 0%, var(--copper-gold) 100%);
-    }
-
-    .stage-connector i {
-      font-size: 1.5rem;
-      color: var(--copper-gold);
-      position: relative;
-      z-index: 1;
-      background: var(--dark-primary);
-      padding: var(--space-xs);
-      border-radius: 50%;
-    }
-
-    .process-stage-card:last-child .stage-connector {
-      display: none;
-    }
-
-    @media (max-width: 767.98px) {
-      .process-stage-card:hover {
-        transform: translateY(-4px);
-      }
-
-      .stage-header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .stage-icon-wrapper {
-        width: 56px;
-        height: 56px;
-      }
-
-      .detail-row {
-        flex-direction: column;
-        gap: var(--space-xs);
-        text-align: center;
-      }
-    }
-
-    .timeline-gantt { background: var(--dark-card); border-radius: var(--radius-lg); padding: var(--space-xl); }
-    .gantt-item { display: flex; align-items: center; gap: var(--space-lg); padding: var(--space-md) 0; border-bottom: 1px solid var(--dark-border); }
-    .gantt-item:last-child { border-bottom: none; }
-    .gantt-label { width: 180px; font-size: var(--text-sm); color: var(--text-secondary); flex-shrink: 0; }
-    .gantt-bar-container { flex: 1; height: 24px; background: var(--dark-tertiary); border-radius: var(--radius-sm); position: relative; }
-    .gantt-bar { position: absolute; height: 100%; background: var(--copper-gradient); border-radius: var(--radius-sm); }
-    .gantt-bar-final { background: linear-gradient(135deg, #50C878 0%, #228B22 100%); }
-    .gantt-days { position: absolute; right: var(--space-sm); top: 50%; transform: translateY(-50%); font-size: var(--text-xs); color: var(--text-muted); }
-
-    .supplier-badge { display: inline-block; background: var(--copper-gradient); color: var(--dark-primary); padding: var(--space-xs) var(--space-md); border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; }
-
-    /* Operational Photo Gallery */
-    .operation-photo-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); overflow: hidden; transition: all 0.3s ease; height: 100%; }
-    .operation-photo-card:hover { transform: translateY(-4px); border-color: var(--copper-gold); box-shadow: 0 8px 24px rgba(184, 115, 51, 0.15); }
-    .operation-photo-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
-    .operation-photo-caption { padding: var(--space-md); color: var(--text-secondary); font-size: var(--text-sm); text-align: center; background: var(--dark-card); }
-
-    /* Facility Photo Gallery */
-    .facility-photo-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); overflow: hidden; transition: all 0.3s ease; height: 100%; }
-    .facility-photo-card:hover { transform: translateY(-4px); border-color: var(--copper-gold); box-shadow: 0 8px 24px rgba(184, 115, 51, 0.15); }
-    .facility-photo-card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
-    .facility-photo-caption { padding: var(--space-md); color: var(--text-secondary); font-size: var(--text-sm); text-align: center; background: var(--dark-card); font-weight: 500; }
-
-    @media (max-width: 767.98px) {
-      .gantt-label { width: 120px; font-size: var(--text-xs); }
-      .gantt-days { display: none; }
-    }
-  </style>
+  <!-- Inline styles consolidated into main.css v3.0 -->
 </body>
 </html>
